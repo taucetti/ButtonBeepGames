@@ -6,7 +6,7 @@ public class MenuManager : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1); // script will load our main scene for our game but I have to as test scene for now
+        SceneManager.LoadSceneAsync(4); // script will load our main scene for our game
     }
 
     public void QuitGame()
