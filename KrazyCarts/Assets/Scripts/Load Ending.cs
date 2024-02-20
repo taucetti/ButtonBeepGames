@@ -16,7 +16,9 @@ public class LoadEnding : MonoBehaviour
     {
         if (transform.childCount < 1)
         {
-            Application.LoadLevel("Win");
+            Application.LoadLevel("WInScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         else if(timer.timeRemaining == 0)
         {
