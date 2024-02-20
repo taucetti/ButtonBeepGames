@@ -23,6 +23,8 @@ public class LoadEnding : MonoBehaviour
         else if(timer.timeRemaining == 0)
         {
             Application.LoadLevel("SampleScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }
