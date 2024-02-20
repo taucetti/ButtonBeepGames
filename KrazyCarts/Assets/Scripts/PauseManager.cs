@@ -12,6 +12,7 @@ public class PauseManager : MonoBehaviour
     public AudioSource soundClip;
     public AudioClip soundEffect;
     public ThirdPersonControllerM controller;// Upon pausing, should prevent player from moving, as well as pausing camera movement.
+    public LoadEnding checker;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +22,15 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;// Ensures the game isn't pause apon starting.
         menuButton.SetActive(false);
         restartButton.SetActive(false);
+        controller.canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         // Check for the 'P' key press
-        if (Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape)
+            && checker.gameWon != true && checker.gameLost != true){
             // Toggle pause state
             TogglePause();
             soundClip.PlayOneShot(soundEffect); // Plays the sound effect after pressing the Pause key
@@ -61,7 +64,7 @@ public class PauseManager : MonoBehaviour
             backGround.SetActive(false);// Make the background disappear after unpausing.
             menuButton.SetActive(false);
             restartButton.SetActive(false);
-            controller.canMove = true; ;// Unpauses player and camera.
+            controller.canMove = true; // Unpauses player and camera.
         }
     }
 }
