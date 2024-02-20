@@ -6,7 +6,7 @@ using TMPro;
 public class CartUI : MonoBehaviour
 {
 
-    private TextMeshProUGUI cartText;
+    public TextMeshProUGUI cartText;
     // Start is called before the first frame update
     void Start()
     {

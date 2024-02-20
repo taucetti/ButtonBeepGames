@@ -13,5 +13,14 @@ public class Carts : MonoBehaviour
             cartCollection.CartCollected();
             gameObject.SetActive(false);
         }
+
+    }
+
+    private void OnCollisionEnter(Collision otherObj)
+    {
+        if(otherObj.gameObject.tag == "Cart")
+        {
+            Destroy(gameObject, 0.5f);
+        }
     }
 }
