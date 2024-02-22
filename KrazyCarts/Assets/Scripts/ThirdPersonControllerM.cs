@@ -8,7 +8,6 @@ public class ThirdPersonControllerM : MonoBehaviour
 {
     public float walkingSpeed = 7.5f;
     public float runningSpeed = 11.5f;
-    public float jumpSpeed = 8.0f;
     public float gravity = 40.0f;
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
@@ -44,7 +43,7 @@ public class ThirdPersonControllerM : MonoBehaviour
 
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
-            moveDirection.y = jumpSpeed;
+            moveDirection.y = 0;
         }
         else
         {
