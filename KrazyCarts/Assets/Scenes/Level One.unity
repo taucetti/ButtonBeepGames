@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46468604, g: 0.7326781, b: 0.9356061, a: 1}
+  m_IndirectSpecularColor: {r: 0.46464533, g: 0.73273903, b: 0.9356016, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14096,6 +14096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e928c0272b1b74988d9badb64eb700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
+  soundEffect: {fileID: 0}
   OnCartCollected:
     m_PersistentCalls:
       m_Calls:
@@ -40461,6 +40463,7 @@ GameObject:
   - component: {fileID: 1734916915}
   - component: {fileID: 1734916918}
   - component: {fileID: 1734916919}
+  - component: {fileID: 1734916920}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -40632,6 +40635,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e615cb213cb040a7661b738a04478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1734916920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734916910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e928c0272b1b74988d9badb64eb700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundClip: {fileID: 2067958730}
+  soundEffect: {fileID: 8300000, guid: 049e7e4640d32344d86794adf436e58b, type: 3}
+  OnCartCollected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1738069167
 PrefabInstance:
   m_ObjectHideFlags: 0
