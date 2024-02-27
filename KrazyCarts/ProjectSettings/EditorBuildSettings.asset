@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WInScene.unity
     guid: 9f8c1628f0948e84ea17277972a108b5
+  - enabled: 1
+    path: Assets/Scenes/LevelSelectionScreen.unity
+    guid: ce5689d2002d00547954caa23db8c5f1
   m_configObjects: {}
