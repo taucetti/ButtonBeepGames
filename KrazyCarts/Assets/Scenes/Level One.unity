@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46464533, g: 0.73273903, b: 0.9356016, a: 1}
+  m_IndirectSpecularColor: {r: 0.46468604, g: 0.7326781, b: 0.9356061, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10560,6 +10560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440526896}
   - component: {fileID: 440526897}
+  - component: {fileID: 440526898}
   m_Layer: 0
   m_Name: Carts
   m_TagString: Untagged
@@ -10615,6 +10616,19 @@ MonoBehaviour:
   controller: {fileID: 578049490}
   gameWon: 0
   gameLost: 0
+--- !u!114 &440526898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440526895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256ebfb3ab9832c4b8e8d023029eee67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartSum: 0
 --- !u!1001 &441226327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38750,7 +38764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0/11
+  m_text: '0 / ??
 
 '
   m_isRightToLeft: 0
@@ -38842,7 +38856,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90489a041515d6a45802f8ec2223c057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartText: {fileID: 0}
+  cartText: {fileID: 1187439589}
+  totalCarts: {fileID: 440526898}
 --- !u!1 &1203003318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9190781967291702644, guid: 704c3399322e67e40b6a9e13d302e58f,
