@@ -27,6 +27,7 @@ public class ThirdPersonControllerM : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        canMove = true;
     }
 
     void Update()
