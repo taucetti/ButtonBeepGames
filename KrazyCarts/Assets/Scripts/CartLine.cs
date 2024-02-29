@@ -12,7 +12,7 @@ public class CartLine : MonoBehaviour
     
 
     }
-    void OnColliderEnter(Collider cart)
+    void OnTriggerEnter(Collider cart)
     {
    
         if (cart.CompareTag("Cart"))
