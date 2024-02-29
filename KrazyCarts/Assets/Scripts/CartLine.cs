@@ -6,20 +6,22 @@ public class CartLine : MonoBehaviour
 {
     public GameObject[] playerCarts;
 
-    void Start ()
+    void Awake ()
     {
         playerCarts = GameObject.FindGameObjectsWithTag("PlayerCarts");
+    
 
     }
-    void OnTriggerEnter(Collider other)
+    void OnColliderEnter(Collider cart)
     {
    
-        if (other.CompareTag("Cart"))
+        if (cart.CompareTag("Cart"))
         {
 
-            for (int i = 0; i < playerCarts.Length; i++)
+            for (int i = 0; i < playerCarts.Length;i++)
             {
-                playerCarts.GameObject.SetActive(true);
+                playerCarts[i].SetActive(true);
+               
             }
 
         }
