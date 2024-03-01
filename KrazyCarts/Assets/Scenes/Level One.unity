@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46464533, g: 0.73273903, b: 0.9356016, a: 1}
+  m_IndirectSpecularColor: {r: 0.46468604, g: 0.7326781, b: 0.9356061, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1642,7 +1642,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.34808812, y: -0.0000045895576, z: -0.000020267442}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1723,9 +1723,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.084748685
-  m_Height: 0.33899474
+  m_Height: 0.44360307
   m_Direction: 0
-  m_Center: {x: -0.16949737, y: 0, z: 0}
+  m_Center: {x: -0.22180328, y: -0.00000003787624, z: 0.0000003007745}
 --- !u!1001 &65596808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12937,7 +12937,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.049996868, y: -0.0000021504775, z: 0.000023327768}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -12990,10 +12990,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.090269946
-  m_Height: 0.3008998
+  m_Radius: 0.09836987
+  m_Height: 0.31597716
   m_Direction: 0
-  m_Center: {x: -0.1504499, y: 0, z: 0}
+  m_Center: {x: -0.1500124, y: -0.0831704, z: -0.000000010866235}
 --- !u!1001 &508842859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18799,7 +18799,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.3008998, y: -0.27973545, z: 0.014627978}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -18880,9 +18880,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.08619918
-  m_Height: 0.34479672
+  m_Height: 0.52750486
   m_Direction: 0
-  m_Center: {x: -0.17239836, y: 0, z: 0}
+  m_Center: {x: -0.16774438, y: 0.0000011022945, z: -0.0000000030630054}
 --- !u!1001 &543994758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39290,6 +39290,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 704c3399322e67e40b6a9e13d302e58f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1966168128}
     - targetCorrespondingSourceObject: {fileID: -1282402286625539804, guid: 704c3399322e67e40b6a9e13d302e58f,
         type: 3}
       insertIndex: -1
@@ -39884,7 +39888,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.58843535, y: -0.018790204, z: -0.000002393376}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -39964,8 +39968,8 @@ SphereCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.19574183
-  m_Center: {x: -0.19574183, y: 0, z: 0}
+  m_Radius: 0.23703785
+  m_Center: {x: 0.18000129, y: 0.009999998, z: 0.041296057}
 --- !u!1001 &1205953507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41300,7 +41304,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.21840805, y: 0.0068510054, z: -0.023036258}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -41380,10 +41384,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0
-  m_Height: 0
+  m_Radius: 0.067306794
+  m_Height: 0.13461359
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.045768756, y: -0.05, z: -0.002563196}
 --- !u!1001 &1255524570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45330,7 +45334,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.21110505, y: 0.07416751, z: 0.08842949}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -46042,7 +46046,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.27080417, y: -0.36891487, z: -0.0000023986834}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -46123,9 +46127,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.054602012
-  m_Height: 0.21840805
+  m_Height: 0.41880107
   m_Direction: 0
-  m_Center: {x: 0.109204024, y: 0, z: 0}
+  m_Center: {x: -0.01766352, y: -0.00000049605956, z: -0.000000025583358}
 --- !u!1001 &1476566145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47833,7 +47837,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.19666298, y: 0.4105336, z: -0.0000023063262}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -47913,10 +47917,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.052776262
-  m_Height: 0.21110505
+  m_Radius: 0.058226835
+  m_Height: 0.4564497
   m_Direction: 0
-  m_Center: {x: 0.105552524, y: 0, z: 0}
+  m_Center: {x: 0.017872412, y: -0.0054507046, z: 0.00000007490648}
 --- !u!1001 &1516295691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52032,7 +52036,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.050871924, y: -0.03369094, z: 0.087608784}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -58902,6 +58906,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5958486, y: 6.7210073, z: 1.0489577}
   m_Center: {x: 0.10495651, y: -2.9012136, z: 0.52447885}
+--- !u!1 &1966168127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 704c3399322e67e40b6a9e13d302e58f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1169818171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1966168128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966168127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0f8685579e7cb42a78920240a903c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1970817707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62134,8 +62156,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.050871924, y: 0.39129645, z: 0.39996338}
-  m_Center: {x: -0.025435962, y: -0.016845465, z: -0.18610343}
+  m_Size: {x: 0.05087192, y: 0.07510625, z: 0.3396605}
+  m_Center: {x: -0.025434427, y: 0.012658206, z: -0.005577445}
 --- !u!1001 &2055037080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63655,7 +63677,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.044311278, y: 0.21889521, z: 0.013878271}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -63708,8 +63730,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.27080417, y: 0.36890832, z: 0.38972425}
-  m_Center: {x: 0.13540208, y: -0.18446071, z: -0.0000011920929}
+  m_Size: {x: 0.34688783, y: 0.21483125, z: 0.1921539}
+  m_Center: {x: -0.0008272964, y: 0.006558672, z: 0.0035428856}
 --- !u!1001 &2114416893
 PrefabInstance:
   m_ObjectHideFlags: 0
