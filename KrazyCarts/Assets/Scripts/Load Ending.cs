@@ -15,6 +15,10 @@ public class LoadEnding : MonoBehaviour
     public ThirdPersonControllerM controller;
     public bool gameWon;
     public bool gameLost;
+    public AudioSource soundClip;
+    public AudioClip winSound;
+    public AudioClip lostSound;
+    private int check = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +44,7 @@ public class LoadEnding : MonoBehaviour
             nextButton.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            PlayWinClip();
         }
         else if(timer.timeRemaining == 0)
         {
@@ -52,6 +57,24 @@ public class LoadEnding : MonoBehaviour
             menuButton.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            PlayLoseClip();
+        }
+    }
+
+    public void PlayWinClip()
+    {
+        if (check == 0)
+        {
+            soundClip.PlayOneShot(winSound);
+            check += 1;
+        }
+    }
+    public void PlayLoseClip()
+    {
+        if (check == 0)
+        {
+            soundClip.PlayOneShot(lostSound);
+            check += 1;
         }
     }
 }
