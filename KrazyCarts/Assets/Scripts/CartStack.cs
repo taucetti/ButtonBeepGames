@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class CartStack : MonoBehaviour
 {
-   private GameObject playerCarts;
+   
     // Start is called before the first frame update
-   private void Start()
+  /* private void Awake()
     {
-        playerCarts = GameObject.FindWithTag("PlayerCarts");
-        playerCarts.SetActive(false);
+        GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag("PlayerCarts");
+        foreach(GameObject go in gameObjectArray)
+        {
+            go.SetActive(false);
+        }
     }
-    
+    */
 }

@@ -5,11 +5,17 @@ using UnityEngine;
 public class CartLine : MonoBehaviour
 {
     public GameObject[] playerCarts;
+    [SerializeField] GameObject _Controller;
+    [SerializeField] GameObject[] _PlayerCarts;
 
-    void Awake ()
+    void Start ()
     {
-        playerCarts = GameObject.FindGameObjectsWithTag("PlayerCarts");
-    
+        GameObject[] _PlayerCarts = GameObject.FindGameObjectsWithTag("PlayerCarts");
+        foreach (GameObject go in _PlayerCarts)
+        {
+            go.SetActive(false);
+        }
+
 
     }
     void OnTriggerEnter(Collider cart)
@@ -20,8 +26,8 @@ public class CartLine : MonoBehaviour
 
             for (int i = 0; i < playerCarts.Length;i++)
             {
-                playerCarts[i].SetActive(true);
-               
+                _PlayerCarts[i].SetActive(true);
+ 
             }
 
         }
