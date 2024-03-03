@@ -20494,8 +20494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e928c0272b1b74988d9badb64eb700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 0}
-  soundEffect: {fileID: 0}
+  soundClip: {fileID: 2067958730}
+  soundEffect: {fileID: 8300000, guid: 0de8434073f63874b8d7986d7da35056, type: 3}
   OnCartCollected:
     m_PersistentCalls:
       m_Calls:

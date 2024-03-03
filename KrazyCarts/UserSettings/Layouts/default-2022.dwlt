@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 55971
+  controlID: 225
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 55972
+  controlID: 226
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 55896
+  controlID: 227
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 55897
+  controlID: 228
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -441,9 +441,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c8c0c00
-      m_LastClickedID: 822396
-      m_ExpandedIDs: 102cfbffe46bfbffaae0fbfffa04fcff8242fcff826afcff86a6fcffe030fdffce63fdff8e09feffda53feff2080feffdaadfeffd6b0feffe4e5feffbc07ffff0434ffff4e60ffff4c8effff8cdfffff9ce2ffff2cfbffff7a6d0000246e00002c6e00009e6e00003e6f00008c6f0000bc6f000038700000967000002471000078710000e471000032720000d07200005c74000062740000c2740000ae75000004760000527600008676000058770000de77000090790000987a0000e2c8000034d80100866d0300906d0300e46d0300606e0300c66e0300fc6e0300be6f03009e700300b0700300fa700300507103002c720300f0720300427303008873030040740300aa740300b4740300ea7403002a75030056750300be750300b8790300227a0300dc7a0300e27a0300727b0300fa7b0300327c0300127d0300527d0300687d0300967d0300e87d0300267e03002a7e0300827e03009685040044880400cc520600ba500700aa56070002580700d4ca070062db070052e10700aae207008c260b009e8e0c00
+      m_SelectedIDs: 88960000
+      m_LastClickedID: 38536
+      m_ExpandedIDs: eea4ffffcac8ffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1087,7 +1087,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials/placeholder
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1095,17 +1095,17 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Materials/placeholder
+  - Assets/Scenes
   m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\mbave\OneDrive\Documents\College\GAME-2359-001\main
     game\ButtonBeepGames\KrazyCarts
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: 8e470c00
-    m_LastClickedID: 804750
-    m_ExpandedIDs: 00000000688100008a81000000ca9a3b
+    scrollPos: {x: 0, y: 171}
+    m_SelectedIDs: c6810000
+    m_LastClickedID: 33222
+    m_ExpandedIDs: 0000000092810000c081000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1133,7 +1133,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006881000000ca9a3b
+    m_ExpandedIDs: 000000009281000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1304,7 +1304,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 70.400024
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
