@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CartLine : MonoBehaviour
 {
-    public GameObject[] playerCarts;
+ 
     [SerializeField] GameObject _Controller;
     [SerializeField] GameObject[] _PlayerCarts;
 
@@ -24,7 +24,7 @@ public class CartLine : MonoBehaviour
         if (cart.CompareTag("Cart"))
         {
 
-            for (int i = 0; i < playerCarts.Length;i++)
+            for (int i = 0; i < _PlayerCarts.Length;i++)
             {
                 _PlayerCarts[i].SetActive(true);
  
