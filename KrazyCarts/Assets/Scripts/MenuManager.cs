@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
+
+    public void Start()
+    {
+        Application.OpenURL("https://forms.gle/RrcfZQhMXUrBKuKU8"); //Should open questionnaire
+    }
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(4); // script will load our main scene for our game
