@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+
+// created by Nikolas script for volume slider
+
+
 public class VolumeSlider : MonoBehaviour
 {
     public float volume;   
