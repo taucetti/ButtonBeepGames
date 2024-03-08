@@ -17,19 +17,19 @@ public class VolumeSlider : MonoBehaviour
         mixer.SetFloat("Volume", volume);   // this will reference for my audio mixer
     }
 
-    public void LowGraphics ()
+    public void LowGraphics () // below sets all the graphics to what the player chooses it references "Quality" in unity project settings
     {
-        QualitySettings.SetQualityLevel(0);
+        QualitySettings.SetQualityLevel(0); // sets the graphics to low
     }
 
     public void MediumGraphics ()
     {
-        QualitySettings.SetQualityLevel(1);
+        QualitySettings.SetQualityLevel(1); // sets the graphics to medium
     }
 
     public void HighGraphics ()
     {
-        QualitySettings.SetQualityLevel(2);
+        QualitySettings.SetQualityLevel(2); // sets the graphics to high
     }
 
 }
