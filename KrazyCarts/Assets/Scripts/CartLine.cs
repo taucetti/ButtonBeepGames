@@ -7,6 +7,7 @@ public class CartLine : MonoBehaviour
  
     [SerializeField] GameObject _Controller;
     [SerializeField] GameObject[] _PlayerCarts;
+    [SerializeField] int cartCount;
 
     void Start ()
     {
@@ -15,22 +16,36 @@ public class CartLine : MonoBehaviour
         {
             go.SetActive(false);
         }
+        cartCount = 0;
 
 
     }
     void OnTriggerEnter(Collider cart)
     {
-   
+
         if (cart.CompareTag("Cart"))
         {
+            Debug.Log("pickupCart");
 
-            for (int i = 0; i < _PlayerCarts.Length;i++)
+            if(cartCount > _PlayerCarts.Length - 1)
+            {
+                cartCount = _PlayerCarts.Length - 1;
+            }
+            _PlayerCarts[cartCount].SetActive(true);
+            cartCount++;
+
+
+
+
+        }   
+          /*  for (int i = 0; i < _PlayerCarts.Length;i++)
             {
                 _PlayerCarts[i].SetActive(true);
  
             }
 
         }
+          */
         //    if (other.CompareTag("Goal"))
         //    {
 
