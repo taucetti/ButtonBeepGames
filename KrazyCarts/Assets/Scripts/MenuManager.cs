@@ -5,10 +5,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 
-    public void Start()
-    {
-        Application.OpenURL("https://forms.gle/RrcfZQhMXUrBKuKU8"); //Should open questionnaire
-    }
+  
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(4); // script will load our main scene for our game
@@ -16,7 +13,8 @@ public class MenuManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit(); // script will quit our game with on click button function
+        Application.Quit(); // script will quit our game with on click button
+        Application.OpenURL("https://forms.gle/63XfdquGYCrWJwwD9");
     }
 
     public void SettingsButton()
