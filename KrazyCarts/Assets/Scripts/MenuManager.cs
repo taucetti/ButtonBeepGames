@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
   
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(4); // script will load our main scene for our game
+        SceneManager.LoadSceneAsync(3); // script will load our main scene for our game
     }
 
     public void QuitGame()
@@ -19,12 +19,12 @@ public class MenuManager : MonoBehaviour
 
     public void SettingsButton()
     {
-        SceneManager.LoadSceneAsync(2); // this will load our settings screen
+        SceneManager.LoadSceneAsync(1); // this will load our settings screen
     }
 
     public void CreditsButton()
     {
-        SceneManager.LoadSceneAsync(3); // this will load our credits screen
+        SceneManager.LoadSceneAsync(2); // this will load our credits screen
     }
 
     public void MenusButton()
@@ -34,11 +34,11 @@ public class MenuManager : MonoBehaviour
 
     public void Level2Button () // this script will send you to Level 2
     {
-        SceneManager.LoadSceneAsync(5);
+        SceneManager.LoadSceneAsync(4);
     }
 
     public void LevelSelectionButton () // this script will send you to Level Selection Screen
     {
-        SceneManager.LoadSceneAsync(7);
+        SceneManager.LoadSceneAsync(5);
     }
 }
