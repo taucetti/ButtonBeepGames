@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4359110926404232098}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -750, y: 255.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -151,6 +151,7 @@ MonoBehaviour:
   musicTitle: {fileID: 6195615397999648411}
   musicTimer: {fileID: 3643278115569068285}
   checker: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!1 &5226213838890357721
 GameObject:
   m_ObjectHideFlags: 0
