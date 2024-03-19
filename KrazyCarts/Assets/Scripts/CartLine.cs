@@ -9,7 +9,7 @@ public class CartLine : MonoBehaviour
     [SerializeField] GameObject[] _PlayerCarts;
     [SerializeField] int cartCount;
 
-    void Start ()
+    void Awake ()
     {
         //Find all GameObjects with Tag Player Carts and set them inactive
         GameObject[] _PlayerCarts = GameObject.FindGameObjectsWithTag("PlayerCarts");
