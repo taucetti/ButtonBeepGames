@@ -9,7 +9,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 60f;
+    public float timeRemaining = 120f;
     public float endTime = 0f;
     public bool timerRunning = false;
     public TextMeshProUGUI timerText;
