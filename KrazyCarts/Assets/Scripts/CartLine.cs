@@ -8,6 +8,7 @@ public class CartLine : MonoBehaviour
     [SerializeField] GameObject _Controller;
     [SerializeField] GameObject[] _PlayerCarts;
     [SerializeField] int cartCount;
+    public int cartHolder;
 
     void Awake ()
     {
@@ -49,9 +50,15 @@ public class CartLine : MonoBehaviour
 
         }
           */
-        //    if (other.CompareTag("Goal"))
-        //    {
-
-        //    }
+        if (cart.CompareTag("Finish"))
+        {
+            if(cartCount > 0)
+            {
+                Debug.Log("ByeCart");
+                _PlayerCarts[cartCount - 1].SetActive(false);
+                cartCount--;
+                cartHolder++;
+            }
+        }
     }
 }

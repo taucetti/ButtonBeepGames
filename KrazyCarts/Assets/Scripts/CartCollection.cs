@@ -11,8 +11,6 @@ public class CartCollection : MonoBehaviour
     public UnityEvent<CartCollection> OnCartCollected;
     public void CartCollected()
     {
-
-        NumberOfCarts++;
         OnCartCollected.Invoke(this);
     }
 }

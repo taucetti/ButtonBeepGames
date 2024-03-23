@@ -18,6 +18,8 @@ public class LoadEnding : MonoBehaviour
     public AudioSource soundClip;
     public AudioClip winSound;
     public AudioClip lostSound;
+    public CartLine cartHold;
+    public TotalCarts totalCarts;
     private int check = 0;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class LoadEnding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount < 1)
+        if (cartHold.cartHolder == totalCarts.cartSum)
         {
             gameWon = true;
             Time.timeScale = 0f;

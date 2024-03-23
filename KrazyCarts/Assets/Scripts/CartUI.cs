@@ -8,6 +8,7 @@ public class CartUI : MonoBehaviour
 
     public TextMeshProUGUI cartText;
     public TotalCarts totalCarts;
+    public CartLine cartLine;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,8 @@ public class CartUI : MonoBehaviour
         cartText.text = "0 / " + totalCarts.cartSum.ToString();
     }
 
-    public void updateCartText(CartCollection cartCollection)
+    void Update()
     {
-        cartText.text = cartCollection.NumberOfCarts.ToString() + " / " + totalCarts.cartSum.ToString();
+        cartText.text = cartLine.cartHolder.ToString() + " / " + totalCarts.cartSum.ToString();
     }
 }
