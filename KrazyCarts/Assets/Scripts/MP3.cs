@@ -26,6 +26,8 @@ public class MP3 : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>();
+
+        ShuffleTracks();
         // Play Music when starting level.
         PlayMusic();
     }
@@ -65,6 +67,18 @@ public class MP3 : MonoBehaviour
         if(checker.gameWon == true || checker.gameLost == true)
         {
             StopMusic();
+        }
+    }
+
+    // Function to shuffle the tracks in the list
+    public void ShuffleTracks()
+    {
+        for (int i = 0; i < musicClips.Length; i++)
+        {
+            AudioClip tempClip = musicClips[i];
+            int randomIndex = Random.Range(i, musicClips.Length);
+            musicClips[i] = musicClips[randomIndex];
+            musicClips[randomIndex] = tempClip;
         }
     }
 
