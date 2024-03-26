@@ -28,7 +28,17 @@ public class CartCollision : MonoBehaviour
            
         }
     }
+    void OnTriggerStay(Collider car)
+    {
+        // If Collision with cars is detected the players Walking/ Running will be reversed until until Collision is ended
+        if (car.gameObject.CompareTag("Cars"))
+        {
+            // Script that if a cart stays collided itll be forced backwards
+            controller.walkingSpeed = -7.5f;
+            controller.runningSpeed = -11.5f;
+        }
 
+    }
     void OnTriggerExit(Collider car)
     {
         // Script that when a carts leaves the cart the player regains controls
