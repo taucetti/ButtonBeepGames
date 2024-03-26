@@ -16,9 +16,9 @@ public class VolumeSlider : MonoBehaviour
     public void SetVolume(float volume)   // created a function name set volume this will be the name that shows up in unity
     {
         //If the volume slider is at its minimum value, set the audio mixer to -80 db to properly mute the volume
-        if (volume == volumeSlider.minValue)
+        if (Mathf.Approximately(volume, volumeSlider.minValue))
         {
-            mixer.SetFloat("Master", -80);
+            mixer.SetFloat("Volume", -80);
         }
         else
         {
