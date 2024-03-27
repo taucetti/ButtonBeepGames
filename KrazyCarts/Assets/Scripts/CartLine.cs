@@ -54,10 +54,13 @@ public class CartLine : MonoBehaviour
         {
             if(cartCount > 0)
             {
-                Debug.Log("ByeCart");
-                _PlayerCarts[cartCount - 1].SetActive(false);
-                cartCount--;
-                cartHolder++;
+                for(int i = 0; i < cartCount; i++)
+                {
+                    Debug.Log("ByeCart");
+                    _PlayerCarts[i].SetActive(false);
+                    cartHolder++;
+                }
+                cartCount = 0;
             }
         }
     }
