@@ -19,6 +19,9 @@ public class MP3 : MonoBehaviour
     private int seconds;
     private int minutes;
 
+    private bool putAway;
+    private float timeToPutAway = 5f;
+
     public LoadEnding checker;
     public PauseManager pauseMenu;
 
@@ -30,6 +33,7 @@ public class MP3 : MonoBehaviour
         ShuffleTracks();
         // Play Music when starting level.
         PlayMusic();
+        putAway = false;
     }
 
     // Update is called once per frame
@@ -37,16 +41,21 @@ public class MP3 : MonoBehaviour
     {
         if (checker.gameWon != true && checker.gameLost != true && !pauseMenu.isPaused)
         {
+            timeToPutAway -= Time.deltaTime;
             // Check for user input to switch to the next music track
             if (Input.GetKeyDown(KeyCode.E))
             {
+                timeToPutAway = 5f;
                 NextMusic();
+                ShowIt();
             }
 
             // Check for user input to switch to the previous music track
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                timeToPutAway = 5f;
                 PreviousMusic();
+                ShowIt();
             }
 
             // Check for user input to stop/play the music
@@ -60,6 +69,12 @@ public class MP3 : MonoBehaviour
                 {
                     PlayMusic();
                 }
+            }
+
+            if (putAway == false && timeToPutAway <= 0)
+            {
+                transform.LeanMoveLocal(new Vector2(750, -760), 1).setEaseInOutBack();
+                putAway = true;
             }
         }
 
@@ -97,6 +112,8 @@ public class MP3 : MonoBehaviour
         {
             currentTrack = musicClips.Length - 1;
         }
+
+
 
         // Start playing the music
         StartCoroutine("WaitForMusicEnd");
@@ -186,5 +203,14 @@ public class MP3 : MonoBehaviour
         // Display the current playback time and total length of the music clip
         musicTimer.text = minutes + ":" + seconds.ToString("D2")
             + " / " + ((fullLength / 60) % 60) + ":" + (fullLength % 60).ToString("D2");
+    }
+
+    void ShowIt()
+    {
+        if(putAway == true)
+        {
+            transform.LeanMoveLocal(new Vector2(750, -500), 1).setEaseInOutBack();
+            putAway = false;
+        }
     }
 }
