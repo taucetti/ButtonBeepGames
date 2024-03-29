@@ -8,62 +8,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 567.39996
+      value: 578.19
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.16379738
+      value: 0.18
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -149.13
+      value: -179.73
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0000020191073
+      value: 0.50000024
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0000020191073
+      value: -0.5000003
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.49999985
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7071068
+      value: -0.49999973
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -8679921383154817045, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -180
+      value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 333adaeed8956024ab5c2fe34e8e6889,
+    - target: {fileID: -7511558181221131132, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6ca4ebd87bef5ad44b03da12a4900c46, type: 2}
-    - target: {fileID: 919132149155446097, guid: 333adaeed8956024ab5c2fe34e8e6889,
+      objectReference: {fileID: 2100000, guid: d9e4aa4cf4f895d45b17354a39c8b672, type: 2}
+    - target: {fileID: 919132149155446097, guid: fac7c36704e7a234e807e4e49569a715,
         type: 3}
       propertyPath: m_Name
       value: Traffic Light
@@ -72,4 +72,4 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 333adaeed8956024ab5c2fe34e8e6889, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: fac7c36704e7a234e807e4e49569a715, type: 3}
