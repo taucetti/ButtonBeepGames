@@ -2,19 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class RagdollforMC : MonoBehaviour
 
 {
+    [SerializeField] GameObject _Controller;
     public BoxCollider mainCollider;
     public GameObject MCRig;
     //public animator when animations are added
+    Vector3 startPosition;
+    Quaternion startRotation;
+
     void Start()
     {
         GetRagdollParts();
         RagdollModeOff();
 
+        Position = transform.position;
+        rotation = transform.rotation;
     }
+
+    private float timeToWakeUp;
 
     void Update()
     {
@@ -31,8 +40,17 @@ public class RagdollforMC : MonoBehaviour
 
     }
 
+    private void resetMCLoc()
+    {
+        
+    }
+
     Collider[] ragDollColliders;
     Rigidbody[] limbsRigidBodies;
+
+    public Vector3 Position { get; private set; }
+
+    private Quaternion rotation;
 
     void GetRagdollParts()
     {
@@ -53,6 +71,7 @@ public class RagdollforMC : MonoBehaviour
 
         mainCollider.enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
+        timeToWakeUp = Random.Range(2, 5);
     }
 
     void RagdollModeOff()
@@ -71,6 +90,14 @@ public class RagdollforMC : MonoBehaviour
         GetComponent<Rigidbody>().isKinematic = false;
 
 
+    }
+    void RagdollBehaviour()
+    {
+        timeToWakeUp -= Time.deltaTime;
+        if (timeToWakeUp <= 0) 
+        {
+            
+        }
     }
 
 }
