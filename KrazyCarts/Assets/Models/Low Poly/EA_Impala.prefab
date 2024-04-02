@@ -78,6 +78,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Impala
       objectReference: {fileID: 0}
+    - target: {fileID: 3847936436074736034, guid: 728095c2f43b21945a4f798f375c9a70,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3847936436074736034, guid: 728095c2f43b21945a4f798f375c9a70,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
