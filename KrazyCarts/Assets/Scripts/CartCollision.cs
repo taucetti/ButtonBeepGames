@@ -5,6 +5,7 @@ using UnityEngine;
 public class CartCollision : MonoBehaviour
 {
     public ThirdPersonControllerM controller;
+    public AchievementResults results;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,9 @@ public class CartCollision : MonoBehaviour
             // Script that if a Cart enters a cart the player rebounds
             controller.walkingSpeed = -7.5f;
             controller.runningSpeed = -11.5f;
-           
+
+            results.movingCars++;
+            Debug.Log(results.movingCars);
         }
     }
     
