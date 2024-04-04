@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - PlayerCarts
   - Cars
+  - MovingCars
   layers:
   - Default
   - TransparentFX
