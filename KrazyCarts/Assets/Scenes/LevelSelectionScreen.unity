@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 686099976}
   - component: {fileID: 686099975}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Juicy Junction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257, y: 74.840866}
+  m_AnchoredPosition: {x: -257, y: -128.9}
   m_SizeDelta: {x: 221.6375, y: 128.6744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686099975
@@ -959,7 +959,7 @@ GameObject:
   - component: {fileID: 785934069}
   - component: {fileID: 785934068}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1226,7 +1226,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 250, y: 50}
-  m_Spacing: {x: 0, y: 18}
+  m_Spacing: {x: 0, y: 250}
   m_Constraint: 2
   m_ConstraintCount: 4
 --- !u!1 &1220888252
