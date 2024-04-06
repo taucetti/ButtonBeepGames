@@ -6,7 +6,7 @@ public class CartLine : MonoBehaviour
 {
  
     [SerializeField] GameObject _Controller;
-    [SerializeField] GameObject[] _PlayerCarts;
+    public GameObject[] _PlayerCarts;
     [SerializeField] int cartCount;
     public int cartHolder;
 
