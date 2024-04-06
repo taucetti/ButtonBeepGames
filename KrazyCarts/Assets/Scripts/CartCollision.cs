@@ -5,7 +5,7 @@ using UnityEngine;
 public class CartCollision : MonoBehaviour
 {
     public ThirdPersonControllerM controller;
-    public AchievementResults results;
+   // public AchievementResults results;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +27,8 @@ public class CartCollision : MonoBehaviour
             controller.walkingSpeed = -7.5f;
             controller.runningSpeed = -11.5f;
 
-            results.movingCars++;
-            Debug.Log(results.movingCars);
+          //  results.movingCars++;
+          //  Debug.Log(results.movingCars);
         }
     }
     
