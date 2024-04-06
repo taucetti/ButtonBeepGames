@@ -14,51 +14,53 @@ public class Timer : MonoBehaviour
     public float endTime = 0f;
     public bool timerRunning = false;
     public TextMeshProUGUI timerText;
+    private bool playedOnce = false; // Prevents from playing continuously
 
+    public AudioSource soundClip;
+    public AudioClip lowTime;
 
-    public class Timer3 : MonoBehaviour
+    // Start is called before the first frame update
+    void Start()
     {
-        public float timeRemaining = 210f;
-        public float endTime = 0f;
-        public bool timerRunning = false;
-        public Text timerText;
+        timerRunning = true;
+        playedOnce = false;
+    }
 
-
-        // Start is called before the first frame update
-        void Start()
+    // Update is called once per frame
+    void Update()
+    {
+        if (timerRunning)
         {
-            timerRunning = true;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if (timerRunning)
+            if (timeRemaining > endTime)
             {
-                if (timeRemaining > endTime)
+                timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
+                if((int)timeRemaining == 14 && !playedOnce)
                 {
-                    timeRemaining -= Time.deltaTime;
-                    DisplayTime(timeRemaining);
-                }
-                else
-                {
-                    timerRunning = false;
-                    timeRemaining = 0;
-                    timerText.text = string.Format("Time Remaining: 0:00");
+                    soundClip.PlayOneShot(lowTime);
+                    Debug.Log("Low on Time");
+                    playedOnce = true;
                 }
             }
-
-
-
+            else
+            {
+                timerRunning = false;
+                timeRemaining = 0;
+                timerText.text = string.Format("Time: 0:00");
+            }
         }
 
 
-        void DisplayTime(float timeToDisplay)
-        {
-            timeToDisplay += 1;
-            float minutes = Mathf.FloorToInt(timeToDisplay / 60); //divide total by 60, full number is minutes
-            float seconds = Mathf.FloorToInt(timeToDisplay % 60); //divide total by 60, remainder is seconds
-            timerText.text = string.Format("Time Remaining: {0:00}:{1:00}", minutes, seconds);
-        }
+
     }
+
+
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60); //divide total by 60, full number is minutes
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60); //divide total by 60, remainder is seconds
+        timerText.text = string.Format("Time: {0:00}:{1:00}", minutes, seconds);
+    }
+    
 }

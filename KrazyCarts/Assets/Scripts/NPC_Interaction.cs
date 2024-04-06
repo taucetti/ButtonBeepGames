@@ -7,6 +7,9 @@ public class NPC_Interaction : MonoBehaviour
 {
     private AudioSource soundClip;
     public AudioClip greetSound;
+    public AudioClip hurtSound;
+
+    public AchievementResults results;
 
     // Start is called before the first frame update
     void Start()
@@ -21,5 +24,11 @@ public class NPC_Interaction : MonoBehaviour
             soundClip.PlayOneShot(greetSound);
         }
 
+        if(other.tag == "PlayerCarts")
+        {
+            soundClip.PlayOneShot(hurtSound);
+            results.shoppers++;
+            Debug.Log(results.shoppers);
+        }
     }
 }

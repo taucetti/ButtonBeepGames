@@ -9,6 +9,8 @@ public class CartLine : MonoBehaviour
     public GameObject[] _PlayerCarts;
     [SerializeField] int cartCount;
     public int cartHolder;
+    public AudioSource soundClip;
+    public AudioClip soundEffect;
 
     void Awake ()
     {
@@ -61,6 +63,7 @@ public class CartLine : MonoBehaviour
                     cartHolder++;
                 }
                 cartCount = 0;
+                soundClip.PlayOneShot(soundEffect);
             }
         }
     }
