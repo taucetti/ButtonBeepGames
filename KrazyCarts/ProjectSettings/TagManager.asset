@@ -9,6 +9,7 @@ TagManager:
   - PlayerCarts
   - Cars
   - MovingCars
+  - Other
   layers:
   - Default
   - TransparentFX
