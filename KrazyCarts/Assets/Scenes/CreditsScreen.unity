@@ -1326,7 +1326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Animation Team\nBryan\nJavier\nDeja\nCasey\n\nProgramming Team \nMichael\nMario\n\nProduction
+  m_text: "Animation Team\nBryan\nJavier\nDeja\nCasey\nShan\n\nProgramming Team \nMichael\nMario\nTrevor\n\nProduction
     Team \nNikolas\nTony\nEvelyn\n\nThank you for playing our game!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90475f13196392b468e1ab9564ee9b5e, type: 2}
