@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class QuitscenetoMainmenu : MonoBehaviour
 {
 
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void ReturntoMM()
     {
         SceneManager.LoadSceneAsync(0);
     }
-   
+
 }
