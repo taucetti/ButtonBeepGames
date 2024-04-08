@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -13,6 +14,8 @@ public class ThirdPersonControllerM : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
 
+    Animator anim;
+
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -23,6 +26,8 @@ public class ThirdPersonControllerM : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
+        //animation = GetComponent<Animator>();
 
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -34,17 +39,21 @@ public class ThirdPersonControllerM : MonoBehaviour
     {
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
-       // Vector3 right = transform.TransformDirection(Vector3.right);
+        //play animation for walking
+        // Vector3 right = transform.TransformDirection(Vector3.right);
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        //play animation for running
         float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX); //+ (right * curSpeedY);
+        // if character has a cart, play walking while pushing cart animation
 
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = 0;
+            
         }
         else
         {
