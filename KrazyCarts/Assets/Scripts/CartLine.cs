@@ -11,6 +11,8 @@ public class CartLine : MonoBehaviour
     public int cartHolder;
     public AudioSource soundClip;
     public AudioClip soundEffect;
+    public bool isCap;
+    public GameObject message;
 
     void Awake ()
     {
@@ -22,7 +24,8 @@ public class CartLine : MonoBehaviour
         }
         // cartCount Variable Declaration
         cartCount = 0;
-
+        isCap = false;
+        message.SetActive(false);
 
     }
     void OnTriggerEnter(Collider cart)
@@ -40,18 +43,15 @@ public class CartLine : MonoBehaviour
             _PlayerCarts[cartCount].SetActive(true);
             cartCount++;
 
-
-
-
-        }   
-          /*  for (int i = 0; i < _PlayerCarts.Length;i++)
+            if(cartCount == _PlayerCarts.Length)
             {
-                _PlayerCarts[i].SetActive(true);
- 
+                isCap = true;
+                Debug.Log("Full");
+                message.SetActive(true);
             }
 
-        }
-          */
+        }   
+
         if (cart.CompareTag("Finish"))
         {
             if(cartCount > 0)
@@ -62,8 +62,15 @@ public class CartLine : MonoBehaviour
                     _PlayerCarts[i].SetActive(false);
                     cartHolder++;
                 }
+                if (cartCount == _PlayerCarts.Length)
+                {
+                    isCap = false;
+                    Debug.Log("No longer full");
+                    message.SetActive(false);
+                }
                 cartCount = 0;
                 soundClip.PlayOneShot(soundEffect);
+
             }
         }
     }

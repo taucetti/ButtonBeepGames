@@ -32,7 +32,7 @@ public class AchievementResults : MonoBehaviour
         if (finished.gameWon == true ||  finished.gameLost == true)
         {
             movingCarsText.text = ("Moving Cars Hit: ") + movingCars.ToString();
-            parkedCarsText.text = ("Parked Cars Hit: ") + parkedCars.ToString();
+            //parkedCarsText.text = ("Parked Cars Hit: ") + parkedCars.ToString();
             shoppersText.text = ("Shoppers Hit: ") + shoppers.ToString();
             if (finished.gameLost)
             {
