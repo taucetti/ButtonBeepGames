@@ -40,15 +40,34 @@ public class ThirdPersonControllerM : MonoBehaviour
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         //play animation for walking
+        //animator.setbool('iswalking', input.GetAxisRaw("Vertical") != 0);
+
         // Vector3 right = transform.TransformDirection(Vector3.right);
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
-        //play animation for running
+
         float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX); //+ (right * curSpeedY);
         // if character has a cart, play walking while pushing cart animation
+
+
+
+        //animations
+   
+        //if (moveDirection == Vector3.zero)
+        //{
+        //  animator.SetFloat("Speed", 0);
+        //}
+        //
+        //else if (Input.GetKey(KeyCode.W))
+        //{
+        //  animator.SetFloat("Speed", .5f);
+        //}
+        //else
+        //{
+        //  animator.SetFloat("Speed", 1f);
 
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
