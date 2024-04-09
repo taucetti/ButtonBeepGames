@@ -9,6 +9,7 @@ public class PauseManager : MonoBehaviour
     public TextMeshProUGUI text;// Ignore error, it still works.
     public GameObject menuButton;
     public GameObject restartButton;
+    public GameObject settingsButton;
     public AudioSource soundClip;
     public AudioClip soundEffect;
     public ThirdPersonControllerM controller;// Upon pausing, should prevent player from moving, as well as pausing camera movement.
@@ -23,6 +24,7 @@ public class PauseManager : MonoBehaviour
         menuButton.SetActive(false);
         restartButton.SetActive(false);
         controller.canMove = true;
+        settingsButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class PauseManager : MonoBehaviour
             backGround.SetActive(true);// Can make the background appear upon pausing.
             menuButton.SetActive(true);
             restartButton.SetActive(true);
+            settingsButton.SetActive(true);
             controller.canMove = false;// Pauses player and camera.
         }
         else
@@ -64,6 +67,7 @@ public class PauseManager : MonoBehaviour
             backGround.SetActive(false);// Make the background disappear after unpausing.
             menuButton.SetActive(false);
             restartButton.SetActive(false);
+            settingsButton.SetActive(false);
             controller.canMove = true; // Unpauses player and camera.
         }
     }

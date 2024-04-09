@@ -11,6 +11,7 @@ public class LoadEnding : MonoBehaviour
     public GameObject menuButton;
     public GameObject restartButton;
     public GameObject nextButton;
+    public GameObject settingsButton;
     public TextMeshProUGUI text;
     public ThirdPersonControllerM controller;
     public bool gameWon;
@@ -29,6 +30,7 @@ public class LoadEnding : MonoBehaviour
         gameWon = false;
         gameLost = false;
         nextButton.SetActive(false);
+        settingsButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class LoadEnding : MonoBehaviour
             restartButton.SetActive(true);
             menuButton.SetActive(true);
             nextButton.SetActive(true);
+            settingsButton.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             PlayWinClip();
