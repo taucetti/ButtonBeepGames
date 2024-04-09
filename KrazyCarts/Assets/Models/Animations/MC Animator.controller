@@ -327,12 +327,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: Movement Pressed
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Shift Pressed
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Cart Held
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7358701510358753568}
   m_Solo: 0

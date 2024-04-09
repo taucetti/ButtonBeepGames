@@ -5,10 +5,11 @@ using UnityEngine;
 public class CartLine : MonoBehaviour
 {
  
-    [SerializeField] GameObject _Controller;
+    public GameObject _Controller;
     public GameObject[] _PlayerCarts;
-    [SerializeField] int cartCount;
+    public int cartCount;
     public int cartHolder;
+
     public AudioSource soundClip;
     public AudioClip soundEffect;
     public bool isCap;
