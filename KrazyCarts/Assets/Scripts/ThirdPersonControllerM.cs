@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -14,7 +14,7 @@ public class ThirdPersonControllerM : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
 
-    Animator anim;
+   // Animator anim;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -26,7 +26,7 @@ public class ThirdPersonControllerM : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         //animation = GetComponent<Animator>();
 
         // Lock cursor
