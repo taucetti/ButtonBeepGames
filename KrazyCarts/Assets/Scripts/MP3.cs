@@ -22,6 +22,7 @@ public class MP3 : MonoBehaviour
     private bool putAway;
     private float timeToPutAway = 5f;
 
+    public LoadEnding checker;
     public PauseManager pauseMenu;
     public Timer timer;
 
@@ -39,7 +40,7 @@ public class MP3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!pauseMenu.isPaused && !timer.playedOnce)
+        if (checker.gameWon != true && checker.gameLost != true && !pauseMenu.isPaused && !timer.playedOnce)
         {
             timeToPutAway -= Time.deltaTime;
             // Check for user input to switch to the next music track
@@ -78,8 +79,8 @@ public class MP3 : MonoBehaviour
             }
         }
 
-        // Stops the music when running out of time
-        if (timer.playedOnce)
+        // Stops the music when the level's finished or running out of time
+        if (checker.gameWon == true || checker.gameLost == true || timer.playedOnce)
         {
             StopMusic();
         }

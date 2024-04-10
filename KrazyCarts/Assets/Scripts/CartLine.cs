@@ -62,6 +62,7 @@ public class CartLine : MonoBehaviour
                     Debug.Log("ByeCart");
                     _PlayerCarts[i].SetActive(false);
                     cartHolder++;
+                    Paycheck.money = Paycheck.money + 10;
                 }
                 if (cartCount == _PlayerCarts.Length)
                 {

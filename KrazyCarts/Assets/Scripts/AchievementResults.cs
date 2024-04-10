@@ -6,13 +6,12 @@ using TMPro;
 
 public class AchievementResults : MonoBehaviour
 {
-    public int movingCars = 0;
-    public int parkedCars = 0;
+    public int cars = 0;
     public int shoppers = 0;
     public Timer time;
 
-    public TextMeshProUGUI movingCarsText;
-    public TextMeshProUGUI parkedCarsText;
+    public TextMeshProUGUI carsText;
+    public TextMeshProUGUI currentCashText;
     public TextMeshProUGUI shoppersText;
     public TextMeshProUGUI timeText;
 
@@ -20,8 +19,8 @@ public class AchievementResults : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        movingCarsText.text = ("");
-        parkedCarsText.text = ("");
+        carsText.text = ("");
+        currentCashText.text = ("");
         shoppersText.text = ("");
         timeText.text = ("");
     }
@@ -31,8 +30,8 @@ public class AchievementResults : MonoBehaviour
     {
         if (finished.gameWon == true ||  finished.gameLost == true)
         {
-            movingCarsText.text = ("Moving Cars Hit: ") + movingCars.ToString();
-            //parkedCarsText.text = ("Parked Cars Hit: ") + parkedCars.ToString();
+            carsText.text = ("Cars Hit: ") + cars.ToString();
+            currentCashText.text = ("Current Paycheck: $") + Paycheck.money.ToString();
             shoppersText.text = ("Shoppers Hit: ") + shoppers.ToString();
             if (finished.gameLost)
             {
