@@ -22,8 +22,8 @@ public class MP3 : MonoBehaviour
     private bool putAway;
     private float timeToPutAway = 5f;
 
-    public LoadEnding checker;
     public PauseManager pauseMenu;
+    public Timer timer;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class MP3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (checker.gameWon != true && checker.gameLost != true && !pauseMenu.isPaused)
+        if (!pauseMenu.isPaused && !timer.playedOnce)
         {
             timeToPutAway -= Time.deltaTime;
             // Check for user input to switch to the next music track
@@ -78,8 +78,8 @@ public class MP3 : MonoBehaviour
             }
         }
 
-        // Stops the music when the level's finished
-        if(checker.gameWon == true || checker.gameLost == true)
+        // Stops the music when running out of time
+        if (timer.playedOnce)
         {
             StopMusic();
         }
@@ -122,7 +122,7 @@ public class MP3 : MonoBehaviour
     // Coroutine to wait for the music clip to end
     IEnumerator WaitForMusicEnd()
     {
-        while(source.isPlaying)
+        while (source.isPlaying)
         {
             playTime = (int)source.time;
             ShowPlayTime();
@@ -138,7 +138,7 @@ public class MP3 : MonoBehaviour
 
         // Move to the next music track
         currentTrack++;
-        if(currentTrack > musicClips.Length - 1)
+        if (currentTrack > musicClips.Length - 1)
         {
             currentTrack = 0;
         }
@@ -207,7 +207,7 @@ public class MP3 : MonoBehaviour
 
     void ShowIt()
     {
-        if(putAway == true)
+        if (putAway == true)
         {
             transform.LeanMoveLocal(new Vector2(750, -500), 1).setEaseInOutBack();
             putAway = false;

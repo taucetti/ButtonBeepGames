@@ -60,6 +60,7 @@ public class LoadEnding : MonoBehaviour
             text.text = ("Level Failed...");
             restartButton.SetActive(true);
             menuButton.SetActive(true);
+            settingsButton.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             PlayLoseClip();

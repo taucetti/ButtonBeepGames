@@ -225,7 +225,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -334,8 +334,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f90b7f7154c59fc4c9f14485fce8a8ef, type: 3}
   musicTitle: {fileID: 6195615397999648411}
   musicTimer: {fileID: 3643278115569068285}
-  checker: {fileID: 0}
   pauseMenu: {fileID: 0}
+  timer: {fileID: 0}
 --- !u!1 &5226213838890357721
 GameObject:
   m_ObjectHideFlags: 0

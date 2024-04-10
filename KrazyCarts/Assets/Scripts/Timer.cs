@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     public float endTime = 0f;
     public bool timerRunning = false;
     public TextMeshProUGUI timerText;
-    private bool playedOnce = false; // Prevents from playing continuously
+    public bool playedOnce = false; // Prevents from playing continuously
 
     public AudioSource soundClip;
     public AudioClip lowTime;
