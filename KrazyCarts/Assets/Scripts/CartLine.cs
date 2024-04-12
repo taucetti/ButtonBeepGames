@@ -46,9 +46,10 @@ public class CartLine : MonoBehaviour
             {
                 cartCount = _PlayerCarts.Length - 1;
             }
+            
             // Loop to set a single cart active when trigger is entered
-            _PlayerCarts[cartCount].SetActive(true);
-            cartCount++;
+                    // _PlayerCarts[cartCount].SetActive(true);
+                    // cartCount++;
             // Modify the player speed to get either faster or slower to increase the difficulty
             ws.walkingSpeed += -1.5f;
             ws.runningSpeed += -1.5f;

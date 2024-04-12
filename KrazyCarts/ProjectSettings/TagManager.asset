@@ -10,6 +10,7 @@ TagManager:
   - Cars
   - MovingCars
   - Other
+  - CartsPickUp
   layers:
   - Default
   - TransparentFX

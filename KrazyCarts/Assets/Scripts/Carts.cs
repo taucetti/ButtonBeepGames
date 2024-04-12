@@ -5,15 +5,18 @@ using UnityEngine;
 public class Carts : MonoBehaviour
 {
     public CartLine carts;
-   private void OnTriggerEnter(Collider other)
+    public CartCollection cartCollection;
+    bool stop=false;
+   private void OnCollisionEnter(Collision other)
     {
-        CartCollection cartCollection = other.GetComponent<CartCollection>();
+        
 
-        if(cartCollection != null && !carts.isCap)
+        if(cartCollection != null && !carts.isCap &&other.collider.CompareTag("CartsPickUp") && stop != true)
         {
             cartCollection.CartCollected();
             gameObject.SetActive(false);
             Destroy(this.gameObject);
+            //stop = true;
         }
 
     }
