@@ -9,11 +9,15 @@ public class CartLine : MonoBehaviour
     public GameObject[] _PlayerCarts;
     public int cartCount;
     public int cartHolder;
+    
 
     public AudioSource soundClip;
     public AudioClip soundEffect;
     public bool isCap;
     public GameObject message;
+    public ThirdPersonControllerM ws;
+
+    
 
     void Awake ()
     {
@@ -27,6 +31,8 @@ public class CartLine : MonoBehaviour
         cartCount = 0;
         isCap = false;
         message.SetActive(false);
+        ws = GetComponent<ThirdPersonControllerM>();
+        
 
     }
     void OnTriggerEnter(Collider cart)
@@ -43,7 +49,12 @@ public class CartLine : MonoBehaviour
             // Loop to set a single cart active when trigger is entered
             _PlayerCarts[cartCount].SetActive(true);
             cartCount++;
-
+            // Modify the player speed to get either faster or slower to increase the difficulty
+            ws.walkingSpeed += -1.5f;
+            ws.runningSpeed += -1.5f;
+          
+          
+          
             if(cartCount == _PlayerCarts.Length)
             {
                 isCap = true;
@@ -63,6 +74,10 @@ public class CartLine : MonoBehaviour
                     _PlayerCarts[i].SetActive(false);
                     cartHolder++;
                     Paycheck.money = Paycheck.money + 10;
+                    // Set the movement back to default when the carts are returned
+                    ws.walkingSpeed = 7.5f;
+                    ws.runningSpeed = 11.5f;
+              
                 }
                 if (cartCount == _PlayerCarts.Length)
                 {
