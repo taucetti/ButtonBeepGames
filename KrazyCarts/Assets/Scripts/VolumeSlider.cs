@@ -13,6 +13,14 @@ public class VolumeSlider : MonoBehaviour
     public AudioMixer mixer;
     public Slider volumeSlider;
 
+    public void Start()
+    {
+        //Have the slider's initial position match the current mixer volume
+        float volume = 0f;
+        mixer.GetFloat("Volume", out volume);
+        volumeSlider.value = volume;
+    }
+
     public void SetVolume(float volume)   // created a function name set volume this will be the name that shows up in unity
     {
         //If the volume slider is at its minimum value, set the audio mixer to -80 db to properly mute the volume
@@ -24,6 +32,8 @@ public class VolumeSlider : MonoBehaviour
         {
             mixer.SetFloat("Volume", volume);   // this will reference for my audio mixer
         }
+
+        volumeSlider.value = volume;
     }
 
     public void LowGraphics () // below sets all the graphics to what the player chooses it references "Quality" in unity project settings
