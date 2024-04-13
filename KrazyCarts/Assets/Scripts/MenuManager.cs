@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
-
+    public GameObject pauseMenu;
+    public GameObject settingsMenu;
   
     public void PlayGame()
     {
@@ -20,6 +21,12 @@ public class MenuManager : MonoBehaviour
     public void SettingsButton()
     {
         SceneManager.LoadSceneAsync(1); // this will load our settings screen
+    }
+
+    public void SettingsButtonPortable()
+    {
+        pauseMenu.SetActive(false);
+        settingsMenu.SetActive(true);
     }
 
     public void CreditsButton()
@@ -40,5 +47,11 @@ public class MenuManager : MonoBehaviour
     public void LevelSelectionButton () // this script will send you to Level Selection Screen
     {
         SceneManager.LoadSceneAsync(5);
+    }
+
+    public void BackToPause()
+    {
+        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
     }
 }

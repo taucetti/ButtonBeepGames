@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CartCollision : MonoBehaviour
 {
-    public ThirdPersonControllerM controller;
-    public AchievementResults results;
-    private float timeTillHitAgain = 5f;
+    //public ThirdPersonControllerM controller;
+    //public AchievementResults results;
+    //private float timeTillHitAgain = 5f;
 
-    public LoadEnding checker;
+    //public LoadEnding checker;
     public PauseManager pauseMenu;
 
     //Marks whether the cart is colliding with a car or not
@@ -34,7 +34,7 @@ public class CartCollision : MonoBehaviour
 
         //If the cart is colliding with a car, move the cart's position according to the escape direction
         //The escape direction is determined when the cart first collides with the car
-        if (isInCar)
+        if (isInCar && !pauseMenu.isPaused)
         {
             transform.position += escapeDirection;
         }
