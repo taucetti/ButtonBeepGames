@@ -110,14 +110,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e435fe0297eb17c4296ff07a4364e023,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5528058294254262664}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e435fe0297eb17c4296ff07a4364e023,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1242097984527287788}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e435fe0297eb17c4296ff07a4364e023,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5179248298089058959}
   m_SourcePrefab: {fileID: 100100000, guid: e435fe0297eb17c4296ff07a4364e023, type: 3}
 --- !u!1 &3532992416781528683 stripped
@@ -147,40 +139,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11782448, y: 0.078638144, z: 0.09312484}
   m_Center: {x: 0.005282404, y: 0.039422657, z: -0.0063865334}
---- !u!95 &5528058294254262664
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3532992416781528683}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: db5cacb1960c1e14fbaa373894f8d581, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1242097984527287788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3532992416781528683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a464e5ca2117dff4aada42afcb689011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 5
 --- !u!54 &5179248298089058959
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -189,7 +147,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3532992416781528683}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
