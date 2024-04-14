@@ -53,22 +53,6 @@ public class ThirdPersonControllerM : MonoBehaviour
         // if character has a cart, play walking while pushing cart animation
 
 
-
-        //animations
-   
-        //if (moveDirection == Vector3.zero)
-        //{
-        //  animator.SetFloat("Speed", 0);
-        //}
-        //
-        //else if (Input.GetKey(KeyCode.W))
-        //{
-        //  animator.SetFloat("Speed", .5f);
-        //}
-        //else
-        //{
-        //  animator.SetFloat("Speed", 1f);
-
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = 0;
