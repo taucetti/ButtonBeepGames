@@ -15,8 +15,11 @@ public class AnimationMC : MonoBehaviour
 
     private Animator animator;
     private string currentAnimation = "";
+    private Vector3 movement;
 
-   //bool isIdle = false;
+    public bool CartCollection { get; private set; }
+
+    //bool isIdle = false;
     //bool cartCollected = false;
 
     // Start is called before the first frame update
@@ -25,53 +28,38 @@ public class AnimationMC : MonoBehaviour
         mC = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         //cartCollected = false;
-        changeAnimation("Walk");
+        //changeAnimation("Walk");
     }
 
     // Update is called once per frame
     void FixedUpdate()
-
-        movement = new Vector2(Input.GetAxisRaw("Horizontal") Input.GetAxisRaw("Vertical"));
-    //{
-       // if (Input.GetKeyDown(KeyCode.W))
-       // {
-          //  if (isGrounded)
-           //     animator.Play("isWalking");
-           // else if (isGrounded)
-          //  {
-           //     cartCollected = true;
-           //     isIdle = false;
-           //     animator.Play("Pushing Cart Walk");
-           // }
-       // }//else if (Input.GetKeyDown(KeyCode.None))
-        //{
-         //   if (isGrounded && !isIdle)
-        //        animator.Play("Idle no cart");
-         //   else if (!isGrounded && !isIdle)
-            {
-        //        cartCollected = true;
-                //sisIdle = true;
-        //        animator.Play("Idle with cart");
-        //    }
-
-       // }
-      //  else if (Input.GetKeyDown(KeyCode.LeftShift))
-       // {
-         //   if (isGrounded)
-        //        animator.Play("isrunning");
-       //     else if (isGrounded)
-       //     {
-       //         cartCollected = true;
-       //         isIdle = false;
-       //         animator.Play("runWithCart");
-         //   }
-
-       // }
-
-    }
-    private void CheckAnimation()
     {
+        movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        CheckAnimation();
+    }
 
+     private void CheckAnimation()
+    {
+        if(movement.y == 1)
+        {
+            changeAnimation("Walk");
+        }
+        else if((movement.y == 0) && (movement.x ==0))
+        {
+            changeAnimation("Idle no cart");
+        }
+        else if ((movement.y == 1) && (CartCollection = true))
+        {
+            changeAnimation("Pushing Cart Walk");
+        }
+        else if ((movement.y == 0) && (movement.x == 0) && (CartCollection = true))
+        {
+            changeAnimation("Idle with cart");
+        }
+        else if (movement.y > 1)
+        {
+            changeAnimation("Running");
+        }
     }
     private void changeAnimation(string animation, float crossfade = 0.2f)
     {
