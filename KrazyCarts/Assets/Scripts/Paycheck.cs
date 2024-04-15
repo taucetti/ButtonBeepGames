@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Paycheck : MonoBehaviour
 {
     public static int money = 500;
+    public static bool isRestarted = false;
+    private static int lastCheck = 0;
     public TextMeshProUGUI text;
 
     void Update()
@@ -19,5 +21,11 @@ public class Paycheck : MonoBehaviour
         {
             money = 500;
         }
+        else if (isRestarted)
+        {
+            money = lastCheck;
+            isRestarted = false;
+        }
+        lastCheck = money;
     }
 }

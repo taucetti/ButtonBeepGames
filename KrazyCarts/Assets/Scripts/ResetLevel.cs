@@ -18,6 +18,10 @@ public class ResetLevel : MonoBehaviour
     }
 
     public void restartLevel(){
+        if(SceneManager.GetActiveScene().buildIndex != 3)
+        {
+            Paycheck.isRestarted = true;
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 }
