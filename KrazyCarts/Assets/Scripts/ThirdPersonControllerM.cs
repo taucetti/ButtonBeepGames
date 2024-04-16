@@ -128,6 +128,14 @@ public class ThirdPersonControllerM : MonoBehaviour
         {
             changeAnimation("Running");
         }
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && (movement.y == -1))
+        {
+            changeAnimation("Running");
+        }
+        else if ((movement.y == -1))
+        {
+            changeAnimation("Walk");
+        }
 
         }
         private void changeAnimation(string animation, float crossfade = 0.2F)
