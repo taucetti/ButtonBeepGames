@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.XR;
+
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -19,6 +21,9 @@ public class ThirdPersonControllerM : MonoBehaviour
     private Animator animator;
     private string currentAnimation = "";
     private Vector3 movement;
+    //private VariableDeclaration someBone = Bone.get < ("Hatbone1") >;
+
+    //BL_Hat01_MOD_V1.transform.parent = Hatbone1;
     //public bool CartCollection { get; private set; }
 
 
@@ -28,6 +33,8 @@ public class ThirdPersonControllerM : MonoBehaviour
 
     [HideInInspector]
     public bool canMove = true;
+
+    //public VariableDeclaration SomeBone { get => someBone; set => someBone = value; }
 
     void Start()
     {
@@ -42,11 +49,12 @@ public class ThirdPersonControllerM : MonoBehaviour
         canMove = true;
     }
 
+
     void Update()
     {
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
-      
+
         // Vector3 right = transform.TransformDirection(Vector3.right);
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
@@ -60,7 +68,7 @@ public class ThirdPersonControllerM : MonoBehaviour
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = 0;
-            
+
         }
         else
         {
@@ -95,35 +103,39 @@ public class ThirdPersonControllerM : MonoBehaviour
     }
     private void CheckAnimation()
     {
-        if (movement.y == 1)
+        if (Input.GetKeyDown(KeyCode.W))
         {
             changeAnimation("Walk");
         }
         else if ((movement.y == 0) && (movement.x == 0))
         {
+            changeAnimation("Idle breathing");
+        }
+
+        else if ((movement.y == 0) && (movement.x == 0) && (Time.deltaTime == 3f))
+        {
             changeAnimation("Idle no cart");
         }
-        else if ((movement.y == 1))// && (CartCollection = true))
-        {
-            changeAnimation("Pushing Cart Walk");
-        }
+        //else if ((movement.y == 1))// && (CartCollection = true))
+        //{
+           // changeAnimation("Pushing Cart Walk");
+        //}
         else if ((movement.y == 0) && (movement.x == 0)) //&& (CartCollection = true))
         {
             changeAnimation("Idle with cart");
         }
-        else if ((movement.y == 1) && Input.GetKeyDown(KeyCode.LeftShift))
+        else if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             changeAnimation("Running");
         }
-    }
-    private void changeAnimation(string animation, float crossfade = 0.2f)
-    {
-        if (currentAnimation != animation)
-        {
-            currentAnimation = animation;
-            animator.CrossFade(animation, crossfade);
+
         }
-
-    }
-
+        private void changeAnimation(string animation, float crossfade = 0.2F)
+        {
+            if (currentAnimation != animation)
+            {
+                currentAnimation = animation;
+                animator.CrossFade(animation, crossfade);
+            }
+        }
 }
