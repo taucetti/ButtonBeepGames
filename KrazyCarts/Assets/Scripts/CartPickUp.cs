@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CartPickUp : MonoBehaviour
 {
+    public GameObject message;
     public CartLine cartLine;
     bool stop = false;
 
@@ -28,18 +29,21 @@ public class CartPickUp : MonoBehaviour
 
         if (other.collider.CompareTag("Cart"))
         {
-            cartLine._PlayerCarts[cartLine.cartCount].SetActive(true);
-            
-            cartLine.cartCount++;
-            stop = true;
+            if(cartLine.cartCount != cartLine._PlayerCarts.Length)
+            { 
+                cartLine._PlayerCarts[cartLine.cartCount].SetActive(true);
+                cartLine.cartCount++;
+            }
             m_ScaleZ += 3;
 
             m_Collider.size = new Vector3(m_ScaleX, m_ScaleY, m_ScaleZ);
-            
-        }
-        if(stop == true)
-        {
-            Debug.Log("The Script is working");
+
+            if (cartLine.cartCount == cartLine._PlayerCarts.Length)
+            {
+                stop = true;
+                cartLine.isCap = true;
+                message.SetActive(true);
+            }
         }
         
 

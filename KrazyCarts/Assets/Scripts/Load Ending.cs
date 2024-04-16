@@ -36,7 +36,7 @@ public class LoadEnding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cartHold.cartHolder == totalCarts.cartSum)
+        if (cartHold.cartHolder >= totalCarts.cartSum)
         {
             gameWon = true;
             Time.timeScale = 0f;
