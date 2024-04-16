@@ -9,6 +9,7 @@ public class CartLine : MonoBehaviour
     public GameObject[] _PlayerCarts;
     public int cartCount;
     public int cartHolder;
+    public GameObject CartsPickup;
     
 
     public AudioSource soundClip;
@@ -37,6 +38,7 @@ public class CartLine : MonoBehaviour
     }
     void OnTriggerEnter(Collider cart)
     {
+        BoxCollider box = CartsPickup.GetComponent<BoxCollider>();
         // If Player Controller collides with cart run the cartCount comparison
         if (cart.CompareTag("Cart"))
         {
@@ -78,6 +80,7 @@ public class CartLine : MonoBehaviour
                     // Set the movement back to default when the carts are returned
                     ws.walkingSpeed = 7.5f;
                     ws.runningSpeed = 11.5f;
+
               
                 }
                 if (cartCount == _PlayerCarts.Length)

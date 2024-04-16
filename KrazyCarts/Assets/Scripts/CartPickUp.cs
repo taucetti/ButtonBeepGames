@@ -26,14 +26,20 @@ public class CartPickUp : MonoBehaviour
     {
         
 
-        if (other.collider.CompareTag("Cart") && stop != true)
+        if (other.collider.CompareTag("Cart"))
         {
             cartLine._PlayerCarts[cartLine.cartCount].SetActive(true);
+            
             cartLine.cartCount++;
             stop = true;
             m_ScaleZ += 3;
 
             m_Collider.size = new Vector3(m_ScaleX, m_ScaleY, m_ScaleZ);
+            
+        }
+        if(stop == true)
+        {
+            Debug.Log("The Script is working");
         }
         
 
