@@ -9,7 +9,7 @@ public class CartLine : MonoBehaviour
     public GameObject[] _PlayerCarts;
     public int cartCount;
     public int cartHolder;
-    public GameObject CartsPickup;
+   // public GameObject CartsPickup;
     
 
     public AudioSource soundClip;
@@ -38,7 +38,7 @@ public class CartLine : MonoBehaviour
     }
     void OnTriggerEnter(Collider cart)
     {
-        BoxCollider box = CartsPickup.GetComponent<BoxCollider>();
+       // BoxCollider box = CartsPickup.GetComponent<BoxCollider>();
         // If Player Controller collides with cart run the cartCount comparison
         if (cart.CompareTag("Cart"))
         {
