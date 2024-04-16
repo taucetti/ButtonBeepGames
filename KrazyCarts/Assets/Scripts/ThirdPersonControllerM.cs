@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -13,6 +15,12 @@ public class ThirdPersonControllerM : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
 
+    Rigidbody mC;
+    private Animator animator;
+    private string currentAnimation = "";
+    private Vector3 movement;
+    //public bool CartCollection { get; private set; }
+
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -24,6 +32,9 @@ public class ThirdPersonControllerM : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+
+        mC = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
 
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -76,5 +87,43 @@ public class ThirdPersonControllerM : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
-    
+
+    private void FixedUpdate()
+    {
+        movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        CheckAnimation();
+    }
+    private void CheckAnimation()
+    {
+        if (movement.y == 1)
+        {
+            changeAnimation("Walk");
+        }
+        else if ((movement.y == 0) && (movement.x == 0))
+        {
+            changeAnimation("Idle no cart");
+        }
+        else if ((movement.y == 1))// && (CartCollection = true))
+        {
+            changeAnimation("Pushing Cart Walk");
+        }
+        else if ((movement.y == 0) && (movement.x == 0)) //&& (CartCollection = true))
+        {
+            changeAnimation("Idle with cart");
+        }
+        else if ((movement.y == 1) && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            changeAnimation("Running");
+        }
+    }
+    private void changeAnimation(string animation, float crossfade = 0.2f)
+    {
+        if (currentAnimation != animation)
+        {
+            currentAnimation = animation;
+            animator.CrossFade(animation, crossfade);
+        }
+
+    }
+
 }
