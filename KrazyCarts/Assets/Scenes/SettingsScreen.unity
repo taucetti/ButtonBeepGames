@@ -1703,6 +1703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70d9980831aa344282d238c7ba9c2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  settingsMenu: {fileID: 0}
 --- !u!4 &1015009795
 Transform:
   m_ObjectHideFlags: 0
@@ -2031,7 +2033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -725, y: 428}
+  m_AnchoredPosition: {x: -722, y: 428}
   m_SizeDelta: {x: 85.192, y: 63.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188097720
@@ -2416,16 +2418,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Settings
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 90475f13196392b468e1ab9564ee9b5e, type: 2}
-  m_sharedMaterial: {fileID: -5091120672347330182, guid: 90475f13196392b468e1ab9564ee9b5e,
+  m_fontAsset: {fileID: 11400000, guid: da5d8574c674658449479b5a22ea62c7, type: 2}
+  m_sharedMaterial: {fileID: 6038284915962725304, guid: da5d8574c674658449479b5a22ea62c7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2551,16 +2553,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 90475f13196392b468e1ab9564ee9b5e, type: 2}
-  m_sharedMaterial: {fileID: -5091120672347330182, guid: 90475f13196392b468e1ab9564ee9b5e,
+  m_fontAsset: {fileID: 11400000, guid: da5d8574c674658449479b5a22ea62c7, type: 2}
+  m_sharedMaterial: {fileID: 6038284915962725304, guid: da5d8574c674658449479b5a22ea62c7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2954,16 +2956,16 @@ MonoBehaviour:
     as a grocery store employee running around the parking lot of your store collecting
     carts to bring back to the store corral. \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 90475f13196392b468e1ab9564ee9b5e, type: 2}
-  m_sharedMaterial: {fileID: -5091120672347330182, guid: 90475f13196392b468e1ab9564ee9b5e,
+  m_fontAsset: {fileID: 11400000, guid: da5d8574c674658449479b5a22ea62c7, type: 2}
+  m_sharedMaterial: {fileID: 6038284915962725304, guid: da5d8574c674658449479b5a22ea62c7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
