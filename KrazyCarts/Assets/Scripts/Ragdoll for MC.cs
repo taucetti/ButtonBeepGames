@@ -72,6 +72,7 @@ public class RagdollforMC : MonoBehaviour
         mainCollider.enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         timeToWakeUp = Random.Range(2, 5);
+        StartCoroutine(Revive(timeToWakeUp));
     }
 
     void RagdollModeOff()
@@ -91,6 +92,12 @@ public class RagdollforMC : MonoBehaviour
 
 
     }
+
+    IEnumerator Revive(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        RagdollModeOff();
+    }
     void RagdollBehaviour()
     {
         timeToWakeUp -= Time.deltaTime;
@@ -99,7 +106,6 @@ public class RagdollforMC : MonoBehaviour
             
         }
     }
-
 }
 
 

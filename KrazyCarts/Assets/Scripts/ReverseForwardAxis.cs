@@ -5,8 +5,8 @@ using UnityEngine.Splines;  //Used to manipulate spline animators
 
 public class ReverseForwardAxis : MonoBehaviour
 {
-    public float time;          //Saves the current time given by the spline animator
-    public float previousTime;  //Saves the previously recorded time from the spline animator
+    private float time;          //Saves the current time given by the spline animator
+    private float previousTime;  //Saves the previously recorded time from the spline animator
     private SplineAnimate splineAnimator;   //The spline animator
     
     // Start is called before the first frame update

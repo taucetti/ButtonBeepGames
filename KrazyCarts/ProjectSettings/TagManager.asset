@@ -11,6 +11,7 @@ TagManager:
   - MovingCars
   - Other
   - CartsPickUp
+  - NPC
   layers:
   - Default
   - TransparentFX
