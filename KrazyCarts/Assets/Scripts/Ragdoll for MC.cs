@@ -13,6 +13,7 @@ public class RagdollforMC : MonoBehaviour
     //public animator when animations are added
     Vector3 startPosition;
     Quaternion startRotation;
+    public KeyCode instaRag;
 
     void Start()
     {
@@ -27,7 +28,10 @@ public class RagdollforMC : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKeyDown(instaRag))
+        {
+            RagdollModeOn();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
