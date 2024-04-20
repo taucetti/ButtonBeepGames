@@ -19,7 +19,7 @@ public class LoadEnding : MonoBehaviour
     public AudioSource soundClip;
     public AudioClip winSound;
     public AudioClip lostSound;
-    public CartLine cartHold;
+    public CartPickUp cartHold;
     public TotalCarts totalCarts;
     private int check = 0;
     // Start is called before the first frame update

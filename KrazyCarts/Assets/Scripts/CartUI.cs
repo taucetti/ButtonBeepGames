@@ -8,7 +8,7 @@ public class CartUI : MonoBehaviour
 
     public TextMeshProUGUI cartText;
     public TotalCarts totalCarts;
-    public CartLine cartLine;
+    public CartPickUp cartLine;
     // Start is called before the first frame update
     void Start()
     {

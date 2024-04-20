@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Carts : MonoBehaviour
 {
-    public CartLine carts;
+    public CartPickUp carts;
     public CartCollection cartCollection;
-    bool stop=false;
    private void OnCollisionEnter(Collision other)
     {
         
 
-        if(cartCollection != null && !carts.isCap &&other.collider.CompareTag("CartsPickUp") && stop != true)
+        if(cartCollection != null && !carts.isCap && other.collider.CompareTag("CartsPickUp"))
         {
             cartCollection.CartCollected();
             gameObject.SetActive(false);
