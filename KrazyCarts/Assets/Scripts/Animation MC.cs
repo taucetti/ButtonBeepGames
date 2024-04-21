@@ -11,7 +11,7 @@ public class AnimationMC : MonoBehaviour
     //public float runSpeed = 11.5f;
     
    // private bool isGrounded = true;
-    Rigidbody mC;
+    //Rigidbody mC;
 
     private Animator animator;
     private string currentAnimation = "";
@@ -25,7 +25,7 @@ public class AnimationMC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mC = GetComponent<Rigidbody>();
+        //mC = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         //cartCollected = false;
         //changeAnimation("Walk");
