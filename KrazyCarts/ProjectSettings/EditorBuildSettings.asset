@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quit Credits.unity
     guid: f5b18711d0892964fb0bf6ee89b96119
+  - enabled: 1
+    path: Assets/Scenes/Cutscene BIL.unity
+    guid: e6a8912cc49240149b1e219b63c613c4
   m_configObjects: {}
