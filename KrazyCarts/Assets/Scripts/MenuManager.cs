@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
   
     public void PlayGame()
     {
+        //Redirect to the cutscene before loading the first level
         SceneManager.LoadSceneAsync(7); // script will load our main scene for our game
     }
 
