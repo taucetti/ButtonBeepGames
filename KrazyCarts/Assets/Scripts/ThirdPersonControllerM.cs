@@ -18,7 +18,7 @@ public class ThirdPersonControllerM : MonoBehaviour
     public float lookXLimit = 45.0f;
 
     public CartCollection cartCollection;
-    public int NumberOfCarts { get; private set; }
+    public int NumberOfCarts { get; }
 
 
     //Rigidbody mC;
@@ -26,12 +26,10 @@ public class ThirdPersonControllerM : MonoBehaviour
     int movementPressedHash;
     private Vector3 movement;
     
-    //private VariableDeclaration someBone = Bone.get < ("Hatbone1") >;
-
-    //BL_Hat01_MOD_V1.transform.parent = Hatbone1;
-    //public bool CartCollection { get; private set; }
+    
 
     private bool playerPermission;
+    private bool playerPermissionRight;
     
 
     CharacterController characterController;
@@ -71,13 +69,17 @@ public class ThirdPersonControllerM : MonoBehaviour
         Vector3 right = transform.TransformDirection(Vector3.right);
 
         float movementDirectionX = moveDirection.x;
-        playerPermission = Input.GetKey("a") || Input.GetKey("d");
-        playerPermission = true;
-        
-        if (NumberOfCarts >= 1 && (canMove = true) && characterController.isGrounded && playerPermission)
+        playerPermission = Input.GetKey("a");
+        playerPermissionRight = Input.GetKey("d");
+
+
+
+        if (cartCollection && (canMove = true) && characterController.isGrounded)
         {
 
             playerPermission = false;
+            movementDirectionX = 0;
+            playerPermissionRight = false;
             //right = forward;
 
         }
@@ -126,20 +128,21 @@ public class ThirdPersonControllerM : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
 
-           
+
 
             //for animations
             //bool movementPressed = animator.GetBool(movementPressedHash);
+            bool getCartHeld = cartCollection; 
             bool forwardPressed = Input.GetKey("w");
             bool isEmoting = Input.GetKey("f");
-            bool getCartHeld = true;
+            
             //isRunning boolean is already called at top of update function
             // Press Left Shift to run
-           // bool isRunning = Input.GetKey(KeyCode.LeftShift);
+            // bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
 
             //walking
-            if ( forwardPressed)
+            if (forwardPressed)
             {
                 animator.SetBool("Movement Pressed", true);
             }
@@ -183,13 +186,13 @@ public class ThirdPersonControllerM : MonoBehaviour
             //emoting when its added
             if (isEmoting)
             {
-             animator.SetBool("isEmoting", true);
-             }
+                animator.SetBool("isEmoting", true);
+            }
 
             if (!isEmoting && forwardPressed)
             {
-             animator.SetBool("isEmoting", false);
-            animator.SetBool("Movement Pressed", true);
+                animator.SetBool("isEmoting", false);
+                animator.SetBool("Movement Pressed", true);
             }
 
             //walking with cart/ Cart pushing
@@ -198,6 +201,7 @@ public class ThirdPersonControllerM : MonoBehaviour
                 animator.SetBool("Movement Pressed", true);
                 animator.SetBool("Cart Held", true);
             }
+           
             //running with cart?
             //if (!isRunning && getCartHeld)
             //{
@@ -207,11 +211,11 @@ public class ThirdPersonControllerM : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    //private void FixedUpdate()
+    //{
+      //  movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
        // CheckAnimation();
-    }
+    //}
    
         //private void changeAnimation(string animation, float crossfade = 0.2F)
         //{
