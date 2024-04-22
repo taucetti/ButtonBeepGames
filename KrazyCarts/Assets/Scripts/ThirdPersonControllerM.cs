@@ -23,13 +23,13 @@ public class ThirdPersonControllerM : MonoBehaviour
 
     //Rigidbody mC;
     private Animator animator;
-    int movementPressedHash;
+    //int movementPressedHash;
     private Vector3 movement;
     
     
 
     private bool playerPermission;
-    private bool playerPermissionRight;
+    //private bool playerPermissionRight;
     
 
     CharacterController characterController;
@@ -39,15 +39,13 @@ public class ThirdPersonControllerM : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
-    //public VariableDeclaration SomeBone { get => someBone; set => someBone = value; }
-
     void Start()
     {
         characterController = GetComponent<CharacterController>();
 
        //mC = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        movementPressedHash = Animator.StringToHash("Movement Pressed");
+        //movementPressedHash = Animator.StringToHash("Movement Pressed");
 
 
         // Lock cursor
@@ -69,23 +67,7 @@ public class ThirdPersonControllerM : MonoBehaviour
         Vector3 right = transform.TransformDirection(Vector3.right);
 
         float movementDirectionX = moveDirection.x;
-        playerPermission = Input.GetKey("a");
-        playerPermissionRight = Input.GetKey("d");
-
-
-
-        if (cartCollection && (canMove = true) && characterController.isGrounded)
-        {
-
-            playerPermission = false;
-            movementDirectionX = 0;
-            playerPermissionRight = false;
-            //right = forward;
-
-        }
-
-
-
+  
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
@@ -129,10 +111,18 @@ public class ThirdPersonControllerM : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
 
 
+            playerPermission = Input.GetKey("a") || Input.GetKey("d");
+            bool getCartHeld = cartCollection;
+
+            if (NumberOfCarts > 0 && (characterController.isGrounded && playerPermission == true))
+            {
+                playerPermission = false;
+                //right = forward;
+            }
 
             //for animations
             //bool movementPressed = animator.GetBool(movementPressedHash);
-            bool getCartHeld = cartCollection; 
+            //bool getCartHeld = cartCollection; 
             bool forwardPressed = Input.GetKey("w");
             bool isEmoting = Input.GetKey("f");
             
