@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
   
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(3); // script will load our main scene for our game
+        SceneManager.LoadSceneAsync(7); // script will load our main scene for our game
     }
 
     public void QuitGame()

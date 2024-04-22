@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Change_Scenes : MonoBehaviour
 {
+    //Moves to a different scene
+    public void SceneChange(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
     // Moves to a different Scene
     public void SceneChange(int id){
         SceneManager.LoadScene(id);// When the button's pressed, goes to that scene with the id.
