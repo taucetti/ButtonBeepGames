@@ -60,7 +60,23 @@ public class ThirdPersonControllerM : MonoBehaviour
     }
 
 
-    void Update()
+    private void Update()
+    {
+
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        Vector3 right = transform.TransformDirection(Vector3.right);
+
+        playerPermission = Input.GetKey("a") || Input.GetKey("d");
+        bool getCartHeld = cartCollection;
+
+        if (NumberOfCarts > 0 && (characterController.isGrounded && playerPermission == true))
+        {
+            playerPermission = false;
+            //right = forward;
+        }
+    }
+
+    private void Update()
     {
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -123,8 +139,8 @@ public class ThirdPersonControllerM : MonoBehaviour
             //for animations
             //bool movementPressed = animator.GetBool(movementPressedHash);
             //bool getCartHeld = cartCollection; 
-            bool forwardPressed = Input.GetKey("w");
-            bool isEmoting = Input.GetKey("f");
+            bool forwardPressed = Input.GetKey(KeyCode.W);
+            bool isEmoting = Input.GetKey(KeyCode.F);
             
             //isRunning boolean is already called at top of update function
             // Press Left Shift to run
