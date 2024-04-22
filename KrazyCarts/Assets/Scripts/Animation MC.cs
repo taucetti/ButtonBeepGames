@@ -7,14 +7,14 @@ using UnityEngine;
 public class AnimationMC : MonoBehaviour
 {
 
-    //public float walkSpeed = 7.5f;
-    //public float runSpeed = 11.5f;
+    public float walkSpeed = 7.5f;
+    public float runSpeed = 11.5f;
     
-   // private bool isGrounded = true;
+   private bool isGrounded = true;
     //Rigidbody mC;
 
     private Animator animator;
-    private string currentAnimation = "";
+   // private string currentAnimation = "";
     private Vector3 movement;
 
     public bool CartCollection { get; private set; }
@@ -34,40 +34,86 @@ public class AnimationMC : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        CheckAnimation();
-    }
+        //for animations
+        //bool movementPressed = animator.GetBool(movementPressedHash);
+        bool forwardPressed = Input.GetKey("w");
+        bool isEmoting = Input.GetKey("f");
+        bool getCartHeld = true;
+        //isRunning boolean is already called at top of update function
+        // Press Left Shift to run
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
-     private void CheckAnimation()
-    {
-        if(movement.y == 1)
+
+        //walking
+        if (forwardPressed)
         {
-            changeAnimation("Walk");
+            animator.SetBool("Movement Pressed", true);
         }
-        else if((movement.y == 0) && (movement.x ==0))
+        //not walking, back to idle without cart
+        if (!forwardPressed && !getCartHeld)
         {
-            changeAnimation("Idle no cart");
+            animator.SetBool("Movement Pressed", false);
         }
-        else if ((movement.y == 1) && (CartCollection = true))
+        //running 
+        if (isRunning && forwardPressed)
         {
-            changeAnimation("Pushing Cart Walk");
+            animator.SetBool("Shift Pressed", true);
+            animator.SetBool("Movement Pressed", true);
         }
-        else if ((movement.y == 0) && (movement.x == 0) && (CartCollection = true))
+        //not running, back to idle without cart
+        if (!isRunning && (!forwardPressed && isRunning) && !getCartHeld)
         {
-            changeAnimation("Idle with cart");
+            animator.SetBool("Shift Pressed", false);
+            animator.SetBool("Movement Pressed", false);
+            animator.SetBool("Cart Held", false);
         }
-        else if (movement.y > 1)
+        //back to walk from running
+        if (forwardPressed && !isRunning)
         {
-            changeAnimation("Running");
+            animator.SetBool("Movement Pressed", true);
+            animator.SetBool("Shift Pressed", false);
         }
-    }
-    private void changeAnimation(string animation, float crossfade = 0.2f)
-    {
-        if (currentAnimation != animation)
+        //idle with cart
+        if (!forwardPressed && getCartHeld)
         {
-            currentAnimation = animation;
-            animator.CrossFade(animation, crossfade);
+            animator.SetBool("Movement Pressed", false);
+            animator.SetBool("Cart Held", true);
+
+        }
+        // idle without cart
+        if (!forwardPressed && !getCartHeld)
+        {
+            animator.SetBool("Movement Pressed", false);
+            animator.SetBool("Cart Held", false);
+        }
+        //emoting when its added
+        if (isEmoting)
+        {
+            animator.SetBool("isEmoting", true);
         }
 
+        if (!isEmoting && forwardPressed)
+        {
+            animator.SetBool("isEmoting", false);
+            animator.SetBool("Movement Pressed", true);
+        }
+
+        //walking with cart/ Cart pushing
+        if (forwardPressed && getCartHeld)
+        {
+            animator.SetBool("Movement Pressed", true);
+            animator.SetBool("Cart Held", true);
+        }
+        //running with cart?
+        //if (!isRunning && getCartHeld)
+        //{
+        //   animator.SetBool("Shift Pressed", true);
+        //   animator.SetBool("Cart Held", true);
+        // }
     }
 }
+    
+
+     
+    
+
