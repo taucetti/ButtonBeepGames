@@ -31,16 +31,9 @@ public class AchievementResults : MonoBehaviour
         if (finished.gameWon == true ||  finished.gameLost == true)
         {
             carsText.text = ("Cars Hit: ") + cars.ToString();
-            currentCashText.text = ("Current Paycheck: $") + Paycheck.money.ToString();
+            currentCashText.text = ("Current Paycheck: \n$ ") + Paycheck.money.ToString();
             shoppersText.text = ("Shoppers Hit: ") + shoppers.ToString();
-            if (finished.gameLost)
-            {
-                timeText.text = ("Time Left: 0");
-            }
-            else
-            {
-                timeText.text = ("Time Left: ") + Mathf.FloorToInt(time.timeRemaining + 1).ToString();
-            }
+            timeText.text = ("Time Left: ") + Mathf.FloorToInt(time.timeRemaining + 1).ToString();
         }
     }
 }

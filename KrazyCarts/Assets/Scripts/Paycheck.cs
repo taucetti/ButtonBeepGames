@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Paycheck : MonoBehaviour
 {
-    public static int money = 500;
+    public static int money = 120;
     public static bool isRestarted = false;
     private static int lastCheck = 0;
     public TextMeshProUGUI text;
@@ -19,7 +19,7 @@ public class Paycheck : MonoBehaviour
     { 
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-            money = 500;
+            money = 120;
         }
         else if (isRestarted)
         {

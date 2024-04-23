@@ -5,11 +5,14 @@ using UnityEngine;
 public class CartCollision : MonoBehaviour
 {
     //public ThirdPersonControllerM controller;
-    //public AchievementResults results;
-    //private float timeTillHitAgain = 5f;
+    public AchievementResults results;
+    private float timeTillHitAgain = 1f;
 
-    //public LoadEnding checker;
+    public LoadEnding checker;
     public PauseManager pauseMenu;
+
+    public AudioSource soundClip;
+    public AudioClip soundEffect;
 
     //Marks whether the cart is colliding with a car or not
     private bool isInCar;
@@ -25,12 +28,12 @@ public class CartCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
+
         if (checker.gameWon != true && checker.gameLost != true && !pauseMenu.isPaused)
         {
             timeTillHitAgain -= Time.deltaTime;
         }
-        */
+
 
         //If the cart is colliding with a car, move the cart's position according to the escape direction
         //The escape direction is determined when the cart first collides with the car
@@ -42,7 +45,7 @@ public class CartCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider car)
     {
-        if (car.gameObject.CompareTag("Cars"))
+        if (car.gameObject.CompareTag("Cars") || car.gameObject.CompareTag("MovingCars"))
         {
             //Mark the cart as being in the car
             isInCar = true;
@@ -70,6 +73,15 @@ public class CartCollision : MonoBehaviour
             {
                 escapeDirection.z = 0.1f;
             }
+
+            if (timeTillHitAgain < 0)
+            {
+                results.cars++;
+                soundClip.PlayOneShot(soundEffect);
+                Paycheck.money = Paycheck.money - 15;
+                Debug.Log(results.cars);
+                timeTillHitAgain = 1f;
+            }
         }
 
         /*
@@ -93,7 +105,7 @@ public class CartCollision : MonoBehaviour
 
     void OnTriggerExit(Collider car)
     {
-        if (car.gameObject.CompareTag("Cars"))
+        if (car.gameObject.CompareTag("Cars") || car.gameObject.CompareTag("MovingCars"))
         {
             //Mark the that cart is no longer colliding with a car
             isInCar = false;

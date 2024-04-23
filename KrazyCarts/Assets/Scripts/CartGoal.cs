@@ -10,14 +10,13 @@ public class CartGoal : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")){
-            Debug.Log("Area");
             if (carts.cartCount > 0)
             {
                 for (int i = 0; i < carts.cartCount; i++)
                 {
                     carts._PlayerCarts[i].SetActive(false);
                     carts.cartHolder++;
-                    Paycheck.money = Paycheck.money + 10;
+                    Paycheck.money = Paycheck.money + 5;
                 }
                 if (carts.isCap == true)
                 {

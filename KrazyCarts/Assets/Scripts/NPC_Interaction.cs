@@ -28,6 +28,7 @@ public class NPC_Interaction : MonoBehaviour
         {
             soundClip.PlayOneShot(hurtSound);
             results.shoppers++;
+            Paycheck.money = Paycheck.money - 10;
             Debug.Log(results.shoppers);
         }
     }

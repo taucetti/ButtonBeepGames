@@ -36,7 +36,21 @@ public class LoadEnding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cartHold.cartHolder >= totalCarts.cartSum)
+        if (timer.timeRemaining == 0 || ((cartHold.cartHolder >= totalCarts.cartSum) && (Paycheck.money <= 0)))
+        {
+            gameLost = true;
+            Time.timeScale = 0f;
+            controller.canMove = false;
+            losePanel.SetActive(true);
+            text.text = ("Level Failed...");
+            restartButton.SetActive(true);
+            menuButton.SetActive(true);
+            settingsButton.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            PlayLoseClip();
+        }
+        else if (cartHold.cartHolder >= totalCarts.cartSum)
         {
             gameWon = true;
             Time.timeScale = 0f;
@@ -51,20 +65,7 @@ public class LoadEnding : MonoBehaviour
             Cursor.visible = true;
             PlayWinClip();
         }
-        else if(timer.timeRemaining == 0)
-        {
-            gameLost = true;
-            Time.timeScale = 0f;
-            controller.canMove = false;
-            losePanel.SetActive(true);
-            text.text = ("Level Failed...");
-            restartButton.SetActive(true);
-            menuButton.SetActive(true);
-            settingsButton.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            PlayLoseClip();
-        }
+        
     }
 
     public void PlayWinClip()
