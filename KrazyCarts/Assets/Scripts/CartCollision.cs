@@ -18,11 +18,13 @@ public class CartCollision : MonoBehaviour
     private bool isInCar;
     //Determines the direction the cart will travel in order to get out of the car
     private Vector3 escapeDirection = new Vector3(0, 0, 0);
+    //The original position of the cart
+    private Vector3 originalPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        originalPosition = transform.localPosition;
     }
 
     // Update is called once per frame
@@ -40,6 +42,12 @@ public class CartCollision : MonoBehaviour
         if (isInCar && !pauseMenu.isPaused)
         {
             transform.position += escapeDirection;
+        }
+
+        //Snap the carts back to their original position when they're not colliding with a car
+        if (!isInCar && !pauseMenu.isPaused)
+        {
+            transform.localPosition = originalPosition;
         }
     }
 
