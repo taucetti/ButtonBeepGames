@@ -18,7 +18,7 @@ public class ThirdPersonControllerM : MonoBehaviour
     public float lookXLimit = 45.0f;
 
     public CartCollection cartCollection;
-    public int NumberOfCarts { get; }
+    public int NumberOfCarts { get; set; }
 
 
     //Rigidbody mC;
@@ -90,9 +90,18 @@ public class ThirdPersonControllerM : MonoBehaviour
         float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
-        
-  
-        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+
+        //If the player has any carts ignore strafe inputs
+        if (NumberOfCarts > 0)
+        {
+            moveDirection = (forward * curSpeedX);
+        }
+        //Otherwise the player has no carts and is allowed to strafe all they want
+        else
+        {
+            moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+        }
         
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {

@@ -29,6 +29,9 @@ public class CartGoal : MonoBehaviour
 
                 carts.cartCount = 0;
                 carts.soundClip.PlayOneShot(carts.soundEffect);
+
+                //Tell the third person controller how many carts are currently in the line
+                carts.ws.NumberOfCarts = 0;
             }
         }
     }

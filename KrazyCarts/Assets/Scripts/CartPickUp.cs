@@ -71,6 +71,9 @@ public class CartPickUp : MonoBehaviour
                 isCap = true;
                 message.SetActive(true);
             }
+
+            //Tell the third person controller how many carts are currently in the line
+            ws.NumberOfCarts = cartCount;
         }
     }
 }
