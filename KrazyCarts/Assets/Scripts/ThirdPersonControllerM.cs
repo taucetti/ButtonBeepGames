@@ -60,21 +60,21 @@ public class ThirdPersonControllerM : MonoBehaviour
     }
 
 
-    private void Update()
-    {
+    //private void Update()
+   // {
 
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        Vector3 right = transform.TransformDirection(Vector3.right);
+        //Vector3 forward = transform.TransformDirection(Vector3.forward);
+       // Vector3 right = transform.TransformDirection(Vector3.right);
 
-        playerPermission = Input.GetKey("a") || Input.GetKey("d");
-        bool getCartHeld = cartCollection;
+       // playerPermission = Input.GetKey("a") || Input.GetKey("d");
+       // bool getCartHeld = cartCollection;
 
-        if (NumberOfCarts > 0 && (characterController.isGrounded && playerPermission == true))
-        {
-            playerPermission = false;
+      //  if (NumberOfCarts > 0 && (characterController.isGrounded && playerPermission == true))
+      //  {
+           // playerPermission = false;
             //right = forward;
-        }
-    }
+       // }
+   // }
 
     private void Update()
     {
