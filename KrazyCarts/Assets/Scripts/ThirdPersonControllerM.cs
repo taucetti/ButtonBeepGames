@@ -137,7 +137,7 @@ public class ThirdPersonControllerM : MonoBehaviour
 
 
             playerPermission = Input.GetKey("a") || Input.GetKey("d");
-            bool getCartHeld = cartCollection;
+            bool getCartHeld = NumberOfCarts > 0;
 
             if (NumberOfCarts > 0 && (characterController.isGrounded && playerPermission == true))
             {
@@ -150,12 +150,16 @@ public class ThirdPersonControllerM : MonoBehaviour
             //bool getCartHeld = cartCollection; 
             bool forwardPressed = Input.GetKey(KeyCode.W);
             bool isEmoting = Input.GetKey(KeyCode.F);
-            
+
             //isRunning boolean is already called at top of update function
             // Press Left Shift to run
             // bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
-
+            animator.SetBool("Movement Pressed", forwardPressed);
+            animator.SetBool("Cart Held", getCartHeld);
+            animator.SetBool("isEmoting", isEmoting);
+            animator.SetBool("Shift Pressed", isRunning);
+            /*
             //walking
             if (forwardPressed)
             {
@@ -216,13 +220,14 @@ public class ThirdPersonControllerM : MonoBehaviour
                 animator.SetBool("Movement Pressed", true);
                 animator.SetBool("Cart Held", true);
             }
-           
+            */
+
             //running with cart?
             //if (!isRunning && getCartHeld)
             //{
-             //   animator.SetBool("Shift Pressed", true);
-             //   animator.SetBool("Cart Held", true);
-           // }
+            //   animator.SetBool("Shift Pressed", true);
+            //   animator.SetBool("Cart Held", true);
+            // }
         }
     }
 
