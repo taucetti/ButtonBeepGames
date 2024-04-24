@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 4541337921660261487}
   - component: {fileID: 13725629377966133}
   - component: {fileID: 6858557481224199096}
-  - component: {fileID: 5907917008076544064}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Player
@@ -238,6 +237,7 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   cartCollection: {fileID: 0}
+  animator: {fileID: 1979174877520550374}
   canMove: 1
 --- !u!114 &4541337921660261487
 MonoBehaviour:
@@ -282,27 +282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   other: {fileID: 0}
---- !u!95 &5907917008076544064
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7816271071513359482}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8cd847623aab8e34ba0210b98777a656, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9cd889c36198f344ea160f83e5bfb0e9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &5133320634871913544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -311,6 +290,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4902092146092377631}
     m_Modifications:
+    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e57e8371e45db134ea43d55df13fb139, type: 2}
+    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90e7359138b1a8e449a1ad4a94488da6, type: 2}
+    - target: {fileID: 4463678032035990500, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067185153323208034, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b3dab4ef2a9337940923b0c558bbe9ea,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -422,31 +426,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e57e8371e45db134ea43d55df13fb139, type: 2}
-    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e57e8371e45db134ea43d55df13fb139, type: 2}
-    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 90e7359138b1a8e449a1ad4a94488da6, type: 2}
-    - target: {fileID: 4463678032035990500, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067185153323208034, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.84
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1288,7 +1267,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5475354852789068057}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8cd847623aab8e34ba0210b98777a656, type: 3}
   m_Controller: {fileID: 9100000, guid: 9cd889c36198f344ea160f83e5bfb0e9, type: 2}
   m_CullingMode: 0
@@ -1394,7 +1373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ragdollRigidbodies: []
   characterController: {fileID: 831999094744103723}
-  animator: {fileID: 5907917008076544064}
+  animator: {fileID: 1979174877520550374}
   timeToRevive: 0
 --- !u!1 &5562989052346071469 stripped
 GameObject:
@@ -1868,7 +1847,7 @@ PrefabInstance:
     - target: {fileID: 4054336516661262625, guid: 4c0286ce4e666f44baa9f111e5b9d52c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4054336516661262625, guid: 4c0286ce4e666f44baa9f111e5b9d52c,
         type: 3}

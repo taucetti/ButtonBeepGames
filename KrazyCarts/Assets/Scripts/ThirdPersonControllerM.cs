@@ -22,7 +22,7 @@ public class ThirdPersonControllerM : MonoBehaviour
 
 
     //Rigidbody mC;
-    private Animator animator;
+    public Animator animator;
     //int movementPressedHash;
     private Vector3 movement;
     
@@ -44,7 +44,7 @@ public class ThirdPersonControllerM : MonoBehaviour
         characterController = GetComponent<CharacterController>();
 
        //mC = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         //movementPressedHash = Animator.StringToHash("Movement Pressed");
 
 
