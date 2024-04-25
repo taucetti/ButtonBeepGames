@@ -33,7 +33,7 @@ public class AchievementResults : MonoBehaviour
             carsText.text = ("Cars Hit: ") + cars.ToString();
             currentCashText.text = ("Current Paycheck: \n$ ") + Paycheck.money.ToString();
             shoppersText.text = ("Shoppers Hit: ") + shoppers.ToString();
-            timeText.text = ("Time Left: ") + Mathf.FloorToInt(time.timeRemaining + 1).ToString();
+            timeText.text = ("Time Left: ") + Mathf.FloorToInt(time.timeRemaining).ToString();
         }
     }
 }

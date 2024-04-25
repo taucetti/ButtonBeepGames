@@ -19,11 +19,18 @@ public class Timer : MonoBehaviour
     public AudioSource soundClip;
     public AudioClip lowTime;
 
+    Color originalColor;
+
     // Start is called before the first frame update
     void Start()
     {
         timerRunning = true;
         playedOnce = false;
+
+        if (timerText != null)
+        {
+            originalColor = timerText.color;
+        }
     }
 
     // Update is called once per frame
@@ -41,12 +48,23 @@ public class Timer : MonoBehaviour
                     Debug.Log("Low on Time");
                     playedOnce = true;
                 }
+
+                // This will make the timer flash when running out of time
+                if (((int)timeRemaining % 2 == 0) && playedOnce)
+                {
+                    timerText.color = Color.red;
+                }
+                else
+                {
+                    timerText.color = originalColor;
+                }
             }
             else
             {
                 timerRunning = false;
                 timeRemaining = 0;
                 timerText.text = string.Format("Time: 0:00");
+                timerText.color = Color.black;
             }
         }
 
