@@ -31,8 +31,8 @@ public class RagdollNew : MonoBehaviour
             //If the timer goes below zero, restore the position and reset the rotation, then disable the ragdoll
             if (timeToRevive <= 0)
             {
-                transform.localPosition = new Vector3(0, 0, 0);
-                transform.localRotation = new Quaternion(0, 0, 0, 0);
+                transform.localPosition = Vector3.zero;
+                transform.localRotation = Quaternion.identity;
 
                 DisableRagdoll();
             }

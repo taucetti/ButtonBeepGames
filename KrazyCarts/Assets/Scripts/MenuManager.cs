@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
+    [Tooltip("The canvas containing the pause menu. Only necessary if making use of the portable settings menu.")]
     public GameObject pauseMenu;
+    [Tooltip("The portable settings menu prefab. Only necessary if making use of the portable settings menu.")]
     public GameObject settingsMenu;
   
     public void PlayGame()
