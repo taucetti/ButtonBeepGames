@@ -47,6 +47,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadSceneAsync(4);
     }
 
+    public void Level3Button ()
+    {
+        SceneManager.LoadSceneAsync(8);
+    }
+
     public void LevelSelectionButton () // this script will send you to Level Selection Screen
     {
         SceneManager.LoadSceneAsync(5);
