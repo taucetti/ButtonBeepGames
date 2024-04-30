@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 4541337921660261487}
   - component: {fileID: 13725629377966133}
   - component: {fileID: 6858557481224199096}
+  - component: {fileID: 7625736164257963242}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Player
@@ -236,7 +237,7 @@ MonoBehaviour:
   playerCamera: {fileID: 3875498301463616821}
   lookSpeed: 2
   lookXLimit: 45
-  cartCollection: {fileID: 0}
+  cartCollection: {fileID: 4541337921660261487}
   animator: {fileID: 1979174877520550374}
   canMove: 1
 --- !u!114 &4541337921660261487
@@ -282,6 +283,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   other: {fileID: 0}
+--- !u!114 &7625736164257963242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816271071513359482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b0303defb478d4492d8312c8cda583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5133320634871913544
 PrefabInstance:
   m_ObjectHideFlags: 0
