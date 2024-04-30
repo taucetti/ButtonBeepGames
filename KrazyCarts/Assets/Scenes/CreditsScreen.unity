@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 73455112}
   - component: {fileID: 73455111}
   - component: {fileID: 73455110}
+  - component: {fileID: 73455113}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -268,6 +269,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73455108}
   m_CullTransparentMesh: 1
+--- !u!114 &73455113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73455108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5599e7c6d9da6e4fa6c2b2240d41c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &96610968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1422,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c21a94ab405cf61478831a519830b462, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1562,7 +1575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.8612187, b: 0.5264151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

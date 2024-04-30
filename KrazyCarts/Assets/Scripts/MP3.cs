@@ -60,7 +60,7 @@ public class MP3 : MonoBehaviour
             }
 
             // Check for user input to stop/play the music
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.O))
             {
                 if (source.isPlaying)
                 {

@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 94154887}
   - component: {fileID: 94154886}
   - component: {fileID: 94154885}
+  - component: {fileID: 94154889}
   m_Layer: 5
   m_Name: BIL
   m_TagString: Untagged
@@ -396,6 +397,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94154883}
   m_CullTransparentMesh: 1
+--- !u!114 &94154889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94154883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5599e7c6d9da6e4fa6c2b2240d41c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &96371956
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,8 +966,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 758811734}
   m_HandleRect: {fileID: 758811733}
   m_Direction: 2
-  m_Value: 1.0000006
-  m_Size: 0.7680131
+  m_Value: 0.9999992
+  m_Size: 0.7679567
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1022,6 +1035,7 @@ GameObject:
   - component: {fileID: 446043830}
   - component: {fileID: 446043829}
   - component: {fileID: 446043828}
+  - component: {fileID: 446043832}
   m_Layer: 5
   m_Name: De Juicy
   m_TagString: Untagged
@@ -1175,6 +1189,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446043826}
   m_CullTransparentMesh: 1
+--- !u!114 &446043832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446043826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5599e7c6d9da6e4fa6c2b2240d41c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &473584066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,6 +2027,7 @@ GameObject:
   - component: {fileID: 1196723630}
   - component: {fileID: 1196723629}
   - component: {fileID: 1196723628}
+  - component: {fileID: 1196723631}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -2134,6 +2161,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196723626}
   m_CullTransparentMesh: 1
+--- !u!114 &1196723631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196723626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5599e7c6d9da6e4fa6c2b2240d41c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1220888252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,6 +3007,7 @@ GameObject:
   - component: {fileID: 1790635650}
   - component: {fileID: 1790635649}
   - component: {fileID: 1790635648}
+  - component: {fileID: 1790635652}
   m_Layer: 5
   m_Name: Level 3
   m_TagString: Untagged
@@ -3109,6 +3149,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790635646}
   m_CullTransparentMesh: 1
+--- !u!114 &1790635652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790635646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5599e7c6d9da6e4fa6c2b2240d41c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2116021052
 GameObject:
   m_ObjectHideFlags: 0
