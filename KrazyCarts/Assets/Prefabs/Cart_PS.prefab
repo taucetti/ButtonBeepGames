@@ -83,6 +83,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BL_CartJuicy_MOD (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03d92f493c70e384ea8c9e2453f038da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91,6 +96,12 @@ PrefabInstance:
 --- !u!4 &3954569961008210669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 03d92f493c70e384ea8c9e2453f038da,
+    type: 3}
+  m_PrefabInstance: {fileID: 3561165399438279942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4443545135483156567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 03d92f493c70e384ea8c9e2453f038da,
     type: 3}
   m_PrefabInstance: {fileID: 3561165399438279942}
   m_PrefabAsset: {fileID: 0}
@@ -219,6 +230,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4429575001096793514}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6ab14c7ab1263f84989c9e5bfcd41db8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7955061937011928937}
   m_SourcePrefab: {fileID: 100100000, guid: 6ab14c7ab1263f84989c9e5bfcd41db8, type: 3}
 --- !u!4 &4882753808808921076 stripped
 Transform:
@@ -369,6 +384,22 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   soundClip: {fileID: 0}
   soundEffect: {fileID: 0}
+--- !u!114 &7955061937011928937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226662751116303694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b22752e765555fa40bb58d0dfee34ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartStyle: 0
+  bilCart: {fileID: 6550886647451173047}
+  juicyCart: {fileID: 4443545135483156567}
+  nachoCart: {fileID: 5054531265264145727}
 --- !u!1001 &5396478618541090926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,11 +483,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BL_CartNIKOS_MOD (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6910bcf03ea93f429e6ef5ce6a13251,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6910bcf03ea93f429e6ef5ce6a13251, type: 3}
+--- !u!1 &5054531265264145727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d6910bcf03ea93f429e6ef5ce6a13251,
+    type: 3}
+  m_PrefabInstance: {fileID: 5396478618541090926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5579570484747210629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6910bcf03ea93f429e6ef5ce6a13251,
@@ -562,6 +604,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BL_CartBIL_MOD (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2276db8ea2c64b94b8f2a02f9c9a3da6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -570,6 +617,12 @@ PrefabInstance:
 --- !u!4 &5882470901334481421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2276db8ea2c64b94b8f2a02f9c9a3da6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6208218010249887206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6550886647451173047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2276db8ea2c64b94b8f2a02f9c9a3da6,
     type: 3}
   m_PrefabInstance: {fileID: 6208218010249887206}
   m_PrefabAsset: {fileID: 0}
