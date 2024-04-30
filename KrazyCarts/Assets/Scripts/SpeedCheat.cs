@@ -18,8 +18,13 @@ public class SpeedCheat : MonoBehaviour
         // and speed can still be reseted after depositing carts.
         if ((Input.GetKeyDown(KeyCode.P)) && (player.walkingSpeed < 50))
         {
-            player.walkingSpeed *= 1.5f;
-            player.runningSpeed *= 1.5f;
+            IncreaseSpeed();
         }
+    }
+
+    public void IncreaseSpeed()
+    {
+        player.walkingSpeed *= 1.5f;
+        player.runningSpeed *= 1.5f;
     }
 }
