@@ -8,28 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3566390031902043909, guid: 45c1e6b4f3752be46a58c498d281b42a,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3566390031902043909, guid: 45c1e6b4f3752be46a58c498d281b42a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
-        type: 3}
-    - target: {fileID: 5223316042507598043, guid: 45c1e6b4f3752be46a58c498d281b42a,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223316042507598043, guid: 45c1e6b4f3752be46a58c498d281b42a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
-        type: 3}
     - target: {fileID: -8679921383154817045, guid: 554aeecd487147948ac62eeb0f0b3ed1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -106,6 +84,28 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 3566390031902043909, guid: 45c1e6b4f3752be46a58c498d281b42a,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566390031902043909, guid: 45c1e6b4f3752be46a58c498d281b42a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
+        type: 3}
+    - target: {fileID: 5223316042507598043, guid: 45c1e6b4f3752be46a58c498d281b42a,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223316042507598043, guid: 45c1e6b4f3752be46a58c498d281b42a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -140,5 +140,5 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.110076874, y: 2.1698267, z: 0.39971906}
-  m_Center: {x: -1.5733055, y: 1.0875965, z: -0.17731258}
+  m_Size: {x: 3.9439142, y: 0.64976776, z: 0.5038487}
+  m_Center: {x: -1.6820325, y: 0.010385807, z: -0.024955468}
