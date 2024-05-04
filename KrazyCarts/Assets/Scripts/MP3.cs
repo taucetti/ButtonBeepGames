@@ -190,7 +190,7 @@ public class MP3 : MonoBehaviour
     // Function to display the title of the current music track
     void ShowCurrentMusic()
     {
-        musicTitle.text = source.clip.name; // Display the name of the current music clip
+        musicTitle.text = source.clip.name.ToLower(); // Display the name of the current music clip
         fullLength = (int)source.clip.length; // Get the length of the current music clip in seconds
     }
 
