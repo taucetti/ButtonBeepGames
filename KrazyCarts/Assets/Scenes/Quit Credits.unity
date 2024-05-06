@@ -471,11 +471,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Product Owner\nBryan Lewis\n\nProject Manager\nCasey Ingram\n\nArt lead\nBryan
     Lewis\n\nLevel Design Lead\nEvelyn Arellano\n\nAudio Lead\nNikolas\n\nProgramming
-    Lead\nMichael Morales\n\nArtists\nCasey Ingram\nBryan Lewis\nDeja Martinez\nJavier
-    Ramon\n\nProgrammers\nEvelyn Arellano\nMario Barrera\nMichael Morales\nNikolas\nTrevor\n\nMusic\nSamuel
-    Han\nNikolas\nBryan Lewis\n\n\nQuality Assurance\nBryan Lewis\nMichael Morales\n\nSocial
-    Media\nDeja Martinez\n\nSpecial Thanks to \nRichard Rincon\nPatricia Sipes\nOranges\n\n\nThanks
-    for Quitting!"
+    Lead\nMichael Morales\n\nArtists\nLauren Alvarez\nAiden Hobbs\nCasey Ingram\nBryan
+    Lewis\nDeja Martinez\nJavier Ramon\n\nProgrammers\nEvelyn Arellano\nMario Barrera\nMichael
+    Morales\nNikolas\nTrevor\n\nMusic\nSamuel Han\nNikolas\nBryan Lewis\n\n\nQuality
+    Assurance\nBryan Lewis\nMichael Morales\n\nSocial Media\nDeja Martinez\n\nSpecial
+    Thanks to \nRichard Rincon\nPatricia Sipes\nOranges\n\n\nThanks for Quitting!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90475f13196392b468e1ab9564ee9b5e, type: 2}
   m_sharedMaterial: {fileID: -5091120672347330182, guid: 90475f13196392b468e1ab9564ee9b5e,

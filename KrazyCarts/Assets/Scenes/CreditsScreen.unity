@@ -315,7 +315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 294, y: 333}
+  m_AnchoredPosition: {x: 294, y: 401}
   m_SizeDelta: {x: 340.89197, y: 131.11902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96610970
@@ -450,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 294, y: -218}
+  m_AnchoredPosition: {x: 294, y: -204}
   m_SizeDelta: {x: 340.89197, y: 131.11902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137611505
@@ -1179,7 +1179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 294, y: 17}
+  m_AnchoredPosition: {x: 294, y: 19}
   m_SizeDelta: {x: 340.89197, y: 131.11902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555536778
@@ -1726,7 +1726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -448, y: 19}
+  m_AnchoredPosition: {x: -448, y: 90}
   m_SizeDelta: {x: 749.2402, y: 731.3882}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144522225
@@ -1749,8 +1749,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nBryan\nJavier\nDeja\nCasey\n\n\n\nMichael\nMario\nTrevor\n\n \nNikolas\nEvelyn\nSamuel
-    Han\n\nThank you for playing our game!"
+  m_text: "\nBryan Lewis\nJavier Roman\nDeja Martinez\nCasey Ingram\nLauren Alvarez\nAiden
+    Hobbs\n\n\nMichael Morales\nMario Barrera\nTrevor Minarik \n\n\nNikolas Filva
+    \nEvelyn Arellano\nSamuel Han\n\nThank you for playing our game!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d227d35373ca9a846845e244ea1edb65, type: 2}
   m_sharedMaterial: {fileID: 4532390815270690166, guid: d227d35373ca9a846845e244ea1edb65,
