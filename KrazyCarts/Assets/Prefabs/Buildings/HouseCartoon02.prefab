@@ -60,9 +60,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 299f3c1703c7e714abb690c0ef5e0e13,
         type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 299f3c1703c7e714abb690c0ef5e0e13,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a15cab56dd9a2c548ae85512fddc6d8f, type: 2}
+      objectReference: {fileID: 2100000, guid: 6f3254a3b2b1839439d3290bc6a4f466, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 299f3c1703c7e714abb690c0ef5e0e13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: 299f3c1703c7e714abb690c0ef5e0e13,
         type: 3}
       propertyPath: m_Name
@@ -104,7 +115,7 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 9.504608, y: 10.101008, z: 9.111679}

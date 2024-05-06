@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b6ff6aeea2a519443871fae7692651bc,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: b6ff6aeea2a519443871fae7692651bc,
         type: 3}
@@ -87,12 +87,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
+      objectReference: {fileID: 2100000, guid: 713059d7b9de8584c901702a0edd70e5, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b6ff6aeea2a519443871fae7692651bc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81b45f9e48daf574ab5e3d1aa94fa1ba, type: 2}
+    - target: {fileID: -7511558181221131132, guid: b6ff6aeea2a519443871fae7692651bc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
       objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
         type: 3}
     - target: {fileID: 919132149155446097, guid: b6ff6aeea2a519443871fae7692651bc,
         type: 3}
       propertyPath: m_Name
-      value: CI_Cat_v4_MOD_Reg
+      value: Slim Black Cat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -102,6 +112,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 747112163956730315}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b6ff6aeea2a519443871fae7692651bc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 237775549789704021}
   m_SourcePrefab: {fileID: 100100000, guid: b6ff6aeea2a519443871fae7692651bc, type: 3}
 --- !u!1 &7060727199733565592 stripped
 GameObject:
@@ -131,3 +145,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3942041815521403919, guid: b6ff6aeea2a519443871fae7692651bc, type: 3}
+--- !u!114 &237775549789704021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7060727199733565592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f253fcb122d81e4b98de28563d8e671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matNum: 1
+  mapName: _BaseMap
+  opts:
+  - {fileID: 2800000, guid: 70a3c78f808f59e40b31a76bef5ce657, type: 3}
+  - {fileID: 2800000, guid: 96cccf23bf89aad4f99efabd81bd35d4, type: 3}
+  - {fileID: 2800000, guid: e5a9a63e8fd9057448088e979c3114cc, type: 3}

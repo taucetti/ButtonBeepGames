@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: fb1f8767ab64fc349be767154a4be1ba,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: fb1f8767ab64fc349be767154a4be1ba,
         type: 3}
@@ -87,12 +87,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
+      objectReference: {fileID: 2100000, guid: f1496cad1940a2d408ab7055a2998f87, type: 2}
+    - target: {fileID: -7511558181221131132, guid: fb1f8767ab64fc349be767154a4be1ba,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64d4a18315dab974a9c36eca90017d8c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: fb1f8767ab64fc349be767154a4be1ba,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
       objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
         type: 3}
     - target: {fileID: 919132149155446097, guid: fb1f8767ab64fc349be767154a4be1ba,
         type: 3}
       propertyPath: m_Name
-      value: CI_Cat_v5_MOD_Cheddar
+      value: Orange Cheddar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -102,6 +112,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 464361337715759776}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1f8767ab64fc349be767154a4be1ba,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2805829410338591033}
   m_SourcePrefab: {fileID: 100100000, guid: fb1f8767ab64fc349be767154a4be1ba, type: 3}
 --- !u!1 &7187849751304327777 stripped
 GameObject:
@@ -131,3 +145,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7598472648581286432, guid: fb1f8767ab64fc349be767154a4be1ba, type: 3}
+--- !u!114 &2805829410338591033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7187849751304327777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f253fcb122d81e4b98de28563d8e671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matNum: 1
+  mapName: _BaseMap
+  opts:
+  - {fileID: 2800000, guid: e05c5944e7cc22f4a901e5c565a618ea, type: 3}
+  - {fileID: 2800000, guid: fcd80052d6cc79b4abd20591a516ae9d, type: 3}
+  - {fileID: 2800000, guid: 2815f121d2a2f254fbb04259d3d2aa02, type: 3}
