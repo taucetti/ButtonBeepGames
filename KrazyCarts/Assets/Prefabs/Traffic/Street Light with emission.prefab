@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7371045639654069288
 Transform:
@@ -134,7 +134,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6157173539878201168
 Transform:
@@ -252,7 +252,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4632918273131045453
 Transform:
@@ -414,13 +414,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c361995532a84fe4994f7f1d29e4f1f6,
         type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c361995532a84fe4994f7f1d29e4f1f6,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec81cdf8c7154fd4b8e07afb2e9ae0b4, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c361995532a84fe4994f7f1d29e4f1f6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 5da80da33c9328048be5f3f0e2cecbd4,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: c361995532a84fe4994f7f1d29e4f1f6,
         type: 3}
       propertyPath: m_Name
-      value: BL_StreetLight01_MOD
+      value: Street Light with emission
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c361995532a84fe4994f7f1d29e4f1f6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -437,7 +453,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4632918273131045453}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c361995532a84fe4994f7f1d29e4f1f6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6638977721888999037}
   m_SourcePrefab: {fileID: 100100000, guid: c361995532a84fe4994f7f1d29e4f1f6, type: 3}
 --- !u!4 &8367000073863239223 stripped
 Transform:
@@ -445,3 +465,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8329186791797322204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9175625264405236877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c361995532a84fe4994f7f1d29e4f1f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8329186791797322204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6638977721888999037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175625264405236877}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6327484, y: 1.2566283, z: 13.206491}
+  m_Center: {x: 0.07892392, y: -0.00000023841858, z: 6.5324883}
