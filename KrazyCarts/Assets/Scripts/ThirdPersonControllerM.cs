@@ -150,15 +150,21 @@ public class ThirdPersonControllerM : MonoBehaviour
             //bool getCartHeld = cartCollection; 
             bool forwardPressed = Input.GetKey(KeyCode.W);
             bool isEmoting = Input.GetKey(KeyCode.F);
+            bool strafingRight = Input.GetKey(KeyCode.D);
+            bool strafingLeft = Input.GetKey(KeyCode.A);
+            bool movingBackwards = Input.GetKey(KeyCode.S);
 
             //isRunning boolean is already called at top of update function
             // Press Left Shift to run
             // bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
-            animator.SetBool("Movement Pressed", forwardPressed);
+            animator.SetBool("Forward Movement", forwardPressed);
             animator.SetBool("Cart Held", getCartHeld);
             animator.SetBool("isEmoting", isEmoting);
             animator.SetBool("Shift Pressed", isRunning);
+            animator.SetBool("Strafe Right", strafingRight);
+            animator.SetBool("Strafe Left", strafingLeft);
+            animator.SetBool("Back Movement", movingBackwards);
             //animator.SetBool("Back Movement", )
             /*
             //walking
