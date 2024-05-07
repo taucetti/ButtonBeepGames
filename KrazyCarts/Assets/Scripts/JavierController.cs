@@ -9,16 +9,16 @@ public class JavierController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        animator.ResetTrigger("MCinCollider");
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        animator.SetTrigger("MCinCollider");
+        animator.SetBool("MCinCollider", true);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        animator.ResetTrigger("MCinCollider");
+        animator.SetBool("MCinCollider", false);
     }
 }
