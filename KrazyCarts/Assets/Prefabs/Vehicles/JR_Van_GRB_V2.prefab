@@ -148,4 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   matNum: 1
   mapName: _BaseMap
-  opts: []
+  opts:
+  - {fileID: 2800000, guid: f561240ab088d834c87fa0a23798f3e6, type: 3}
+  - {fileID: 2800000, guid: d3295cae20989424b894a7cde65cc82d, type: 3}
+  - {fileID: 2800000, guid: 809c4b8610056ac4f97501a0623f4b82, type: 3}
