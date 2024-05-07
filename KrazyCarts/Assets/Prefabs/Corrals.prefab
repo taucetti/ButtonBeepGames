@@ -398,8 +398,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3067795814409404356, guid: 84d8a320b68f70e45b551d8c150c2683,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2448907141598968151}
+    - targetCorrespondingSourceObject: {fileID: 3067795814409404356, guid: 84d8a320b68f70e45b551d8c150c2683,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3442030117126932659}
   m_SourcePrefab: {fileID: 100100000, guid: 84d8a320b68f70e45b551d8c150c2683, type: 3}
+--- !u!1 &8095396081632022122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3067795814409404356, guid: 84d8a320b68f70e45b551d8c150c2683,
+    type: 3}
+  m_PrefabInstance: {fileID: 6542498609060475310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2448907141598968151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095396081632022122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6eac670e5793354283ef259baee375d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carts: {fileID: 0}
+--- !u!65 &3442030117126932659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095396081632022122}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4277999, y: 0.34838519, z: 4.000133}
+  m_Center: {x: -1.3525947, y: 0.38861993, z: 2.0009325}
 --- !u!4 &8868519454270837968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2438928611952895358, guid: 84d8a320b68f70e45b551d8c150c2683,
