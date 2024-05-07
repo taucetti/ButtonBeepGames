@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: f820d57fea712c549b1bc2423a93be86
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Flying
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 0
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: DM_Bird_Pecking_Animation (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_Grackle002
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -0.004784042, y: 0.0017807295, z: 0.00032730788}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1.130762, y: 1.4210811, z: 1.130762}
+    - name: Bird_GrackleWing_Primaries_000
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -1.8405771, y: 1.1824464, z: -0.7500517}
+      rotation: {x: 1, y: 0, z: 0, w: -0.000000021855694}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bird_GrackleWing_Primaries_001
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -1.8489856, y: 1.818067, z: -0.7500517}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleWing_PrimaryCoverts_002
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -1.9902323, y: 1.380094, z: -0.7495246}
+      rotation: {x: 1, y: 0, z: 0, w: -0.000000021855694}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bird_GrackleWing_PrimaryCoverts_003
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -1.9646157, y: 2.0157146, z: -0.7495246}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleWing_Secondaries_004
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -2.2482886, y: 1.2232767, z: -0.7500517}
+      rotation: {x: 1, y: 0, z: 0, w: -0.000000021855694}
+      scale: {x: -1, y: -1, z: -0.828117}
+    - name: Bird_GrackleWing_Secondaries_005
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -2.2716198, y: 1.8588973, z: -0.7500517}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.828117}
+    - name: Bird_GrackleWing_SecondaryCoverts_006
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -2.2253914, y: 1.3949616, z: -0.7500517}
+      rotation: {x: 1, y: 0, z: 0, w: -0.000000021855694}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bird_GrackleWing_SecondaryCoverts_007
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -2.2857199, y: 2.0305822, z: -0.7500517}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleWing_Tertials_008
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -2.5077162, y: 1.2662146, z: -0.7500517}
+      rotation: {x: 1, y: 0, z: 0, w: -0.000000021855694}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bird_GrackleWing_Tertials_009
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -2.5077162, y: 1.9018352, z: -0.7500517}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBody_Bone032000
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: 0.07216552, y: 0.18147202, z: 0.0000000079323925}
+      rotation: {x: -8.742508e-28, y: -1.1333485e-18, z: 0.018508986, w: 0.9998287}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Bird_GrackleBody_Bone028001
+      parentName: Bird_GrackleBody_Bone032000
+      position: {x: -0.07506625, y: 0.026087195, z: 0}
+      rotation: {x: 0.00000009663617, y: -0.00000006559322, z: -0.5451538, w: 0.8383361}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBody_Bone029002
+      parentName: Bird_GrackleBody_Bone028001
+      position: {x: -0.10191276, y: -0.000000012111664, z: 8.511682e-10}
+      rotation: {x: -0.000000091997386, y: -0.000000059454052, z: -0.44802287, w: 0.8940221}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Bird_GrackleBody_Bone030003
+      parentName: Bird_GrackleBody_Bone029002
+      position: {x: -0.1064575, y: -0.000000012111664, z: 0}
+      rotation: {x: -8.10111e-10, y: 2.3348432e-10, z: 0.4656608, w: 0.8849633}
+      scale: {x: 0.99999964, y: 0.99999964, z: 1}
+    - name: Bird_GrackleBody_Bone031004
+      parentName: Bird_GrackleBody_Bone030003
+      position: {x: -0.070520915, y: 0, z: 0.0000000010354274}
+      rotation: {x: 4.8059253e-17, y: -2.1678126e-16, z: 0.21643963, w: 0.976296}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bird_GrackleBody_Bone033005
+      parentName: Bird_GrackleBody_Bone032000
+      position: {x: -0.07221585, y: 0.00000029067994, z: -1.8769697e-13}
+      rotation: {x: 0.57279754, y: 0.4240853, z: -0.5335142, w: -0.4554309}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBody_Bone034006
+      parentName: Bird_GrackleBody_Bone033005
+      position: {x: -0.06083634, y: -0.0000003391266, z: -0.000000068506594}
+      rotation: {x: -0.04072997, y: -0.11660304, z: -0.27947637, w: 0.9521753}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBody_Bone035007
+      parentName: Bird_GrackleBody_Bone034006
+      position: {x: -0.06814514, y: 0.000000057530404, z: -0.00000006055832}
+      rotation: {x: 0.36639997, y: 0.2906837, z: 0.28898406, w: 0.83530974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBody_Bone036008
+      parentName: Bird_GrackleBody_Bone035007
+      position: {x: -0.058331255, y: 0.000000006055832, z: -0.000000002270937}
+      rotation: {x: 0.08279527, y: 0.45119038, z: 0.052762996, w: 0.8870109}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Bird_GrackleBody_Bone037009
+      parentName: Bird_GrackleBody_Bone032000
+      position: {x: -0.072216325, y: 0.0000001695633, z: -9.0238926e-14}
+      rotation: {x: -0.3178732, y: -0.6316387, z: 0.29428813, w: 0.6429492}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1}
+    - name: Bird_GrackleBody_Bone038010
+      parentName: Bird_GrackleBody_Bone037009
+      position: {x: -0.062125653, y: -0.000000012111664, z: -0.000000054123998}
+      rotation: {x: 0.04390127, y: -0.13907278, z: 0.3030169, w: 0.9417601}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Bird_GrackleBody_Bone039011
+      parentName: Bird_GrackleBody_Bone038010
+      position: {x: -0.065782264, y: 0.000000021195412, z: -0.00000006774962}
+      rotation: {x: 0.022466147, y: 0.27788273, z: -0.07445808, w: 0.9574615}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.9999998}
+    - name: Bird_GrackleBody_Bone040012
+      parentName: Bird_GrackleBody_Bone039011
+      position: {x: -0.061177794, y: 0, z: 7.56979e-10}
+      rotation: {x: -0.08356654, y: 0.4930173, z: -0.060225155, w: 0.86390024}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bird_GrackleBone_010
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -0.039376542, y: 0.19202812, z: 0.0064843055}
+      rotation: {x: 0.11232997, y: 0.6842883, z: 0.71880764, w: -0.049467564}
+      scale: {x: -0.40006003, y: -0.40006003, z: -0.40006003}
+    - name: Bird_GrackleBone_011
+      parentName: Bird_GrackleBone_010
+      position: {x: -0.102137566, y: 0, z: 2.125307e-12}
+      rotation: {x: 0.11311136, y: 0.61126035, z: 0.47465774, w: 0.62311053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_012
+      parentName: Bird_GrackleBone_011
+      position: {x: -0.17541488, y: 0, z: 0.000000014156729}
+      rotation: {x: 0.18886197, y: 0.4656195, z: 0.14796029, w: 0.85184354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_013
+      parentName: Bird_GrackleBone_012
+      position: {x: -0.43065393, y: 0, z: 0.000000015793828}
+      rotation: {x: -0.32904643, y: -0.12651935, z: 0.46895415, w: 0.80981684}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bird_GrackleBone_014
+      parentName: Bird_GrackleBone_013
+      position: {x: -0.36161125, y: -0.00000019378662, z: 0.00000003975267}
+      rotation: {x: 1.323489e-23, y: -8.881784e-16, z: -0.000000014901161, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bird_GrackleBone_015
+      parentName: Bird_GrackleBone_012
+      position: {x: -0.43065393, y: 0, z: 2.8991963e-12}
+      rotation: {x: -0.17140368, y: 0.059527453, z: 0.7568261, w: 0.6279264}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bird_GrackleBone_016
+      parentName: Bird_GrackleBone_015
+      position: {x: -0.3760225, y: 0.0000019378663, z: 0.000000061254845}
+      rotation: {x: 1.7763568e-15, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_017
+      parentName: Bird_GrackleBone_011
+      position: {x: -0.17541488, y: 0, z: -1.5708793e-12}
+      rotation: {x: 0.08185466, y: 0.32080975, z: 0.71272576, w: 0.61838734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_018
+      parentName: Bird_GrackleBone_017
+      position: {x: -0.39028722, y: 0, z: 0.00000006346556}
+      rotation: {x: 0, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bird_GrackleBone_019
+      parentName: DM_Bird_Pecking_Animation (1)(Clone)
+      position: {x: -0.039376535, y: 0.19208552, z: -0.0018832025}
+      rotation: {x: 0.8653063, y: -0.118624546, z: 0.11807588, w: 0.47247362}
+      scale: {x: 0.40006003, y: 0.40006003, z: 0.40006003}
+    - name: Bird_GrackleBone_020
+      parentName: Bird_GrackleBone_019
+      position: {x: -0.102137566, y: 0, z: 2.125307e-12}
+      rotation: {x: -0.07432065, y: 0.5773123, z: 0.32344845, w: 0.746035}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_021
+      parentName: Bird_GrackleBone_020
+      position: {x: -0.17541488, y: 0, z: 0.000000014156729}
+      rotation: {x: 0.0346751, y: 0.48965448, z: 0.47693655, w: 0.7290869}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_022
+      parentName: Bird_GrackleBone_021
+      position: {x: -0.43065393, y: 0, z: 0.000000015793828}
+      rotation: {x: -0.21667477, y: -0.06879632, z: 0.14658028, w: 0.9627218}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bird_GrackleBone_023
+      parentName: Bird_GrackleBone_022
+      position: {x: -0.36161125, y: -0.00000019378662, z: 0.00000003975267}
+      rotation: {x: 1.323489e-23, y: -8.881784e-16, z: -0.000000014901161, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bird_GrackleBone_024
+      parentName: Bird_GrackleBone_021
+      position: {x: -0.43065393, y: 0, z: 2.8991963e-12}
+      rotation: {x: -0.08985708, y: -0.013524849, z: 0.44135863, w: 0.89271796}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bird_GrackleBone_025
+      parentName: Bird_GrackleBone_024
+      position: {x: -0.3760225, y: 0.0000019378663, z: 0.000000061254845}
+      rotation: {x: 1.7763568e-15, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_026
+      parentName: Bird_GrackleBone_020
+      position: {x: -0.17541488, y: 0, z: -1.5708793e-12}
+      rotation: {x: 0.20218736, y: 0.5043012, z: 0.6901046, w: 0.47807556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bird_GrackleBone_027
+      parentName: Bird_GrackleBone_026
+      position: {x: -0.39028722, y: 0, z: 0.00000006346556}
+      rotation: {x: 0, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6a42b4ffda97e184c89e5dabd474be04,
+    type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
