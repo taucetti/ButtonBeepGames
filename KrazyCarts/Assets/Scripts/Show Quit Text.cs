@@ -20,16 +20,16 @@ public class ShowQuitText : MonoBehaviour
             {
                 uiObject.SetActive(true);
             }
-        uiObject.SetActive(true);
+        //uiObject.SetActive(true);
        
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag != ("Player"))
+        if (other.gameObject.tag == ("Player"))
         {
             uiObject.SetActive(false);
         }
-        uiObject.SetActive(false);
+        //uiObject.SetActive(false);
     }
 }
