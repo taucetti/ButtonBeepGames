@@ -336,6 +336,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 213bdb8a314ede84ba64c79d5d57ad22, type: 3}
   - {fileID: 8300000, guid: 4e08deeee9b0fc94cbe64cadacf76707, type: 3}
   - {fileID: 8300000, guid: 77c2c984730ae9c4b8df3a1e3ebe0a75, type: 3}
+  - {fileID: 8300000, guid: 68965123b441165429a7bc3dc43ad924, type: 3}
+  - {fileID: 8300000, guid: 36b40264e74b0a9478bf272a2d37ce2f, type: 3}
   - {fileID: 8300000, guid: 07d0c9469a8c8414b8b262a66b42da98, type: 3}
   musicTitle: {fileID: 6195615397999648411}
   musicTimer: {fileID: 3643278115569068285}
