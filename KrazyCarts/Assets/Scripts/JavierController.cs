@@ -16,4 +16,9 @@ public class JavierController : MonoBehaviour
     {
         animator.SetTrigger("MCinCollider");
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        animator.ResetTrigger("MCinCollider");
+    }
 }
