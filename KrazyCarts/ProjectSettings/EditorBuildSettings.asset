@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Three.unity
     guid: 416597198a2bf994c9dfbc120e85b659
+  - enabled: 1
+    path: Assets/Scenes/DJJ Cutscene.unity
+    guid: 7fc2d8af1eaf3e046a47dc77734fc1b3
   m_configObjects: {}

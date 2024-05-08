@@ -42,9 +42,9 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadSceneAsync(0); // this script will send you to the main menu can be used as a back or menus button
     }
 
-    public void Level2Button () // this script will send you to Level 2
+    public void Level2Button () // this script will send you to Level 2 intro cutscene
     {
-        SceneManager.LoadSceneAsync(4);
+        SceneManager.LoadSceneAsync(9);
     }
 
     public void Level3Button ()

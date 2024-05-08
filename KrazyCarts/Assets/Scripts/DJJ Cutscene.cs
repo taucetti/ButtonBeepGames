@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DJJCutscene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource cutsceneAudio;
 
-    // Update is called once per frame
-    void Update()
+    public void TransitionToNextScene(int nextScene)
     {
-        
+        cutsceneAudio.Pause();
+        SceneManager.LoadScene(nextScene);//the scene that you want to load after the video has ended.
     }
 }
