@@ -34,7 +34,7 @@ public class MenuManager : MonoBehaviour
 
     public void CreditsButton()
     {
-        SceneManager.LoadSceneAsync(2); // this will load our credits screen
+        SceneManager.LoadSceneAsync(10); // this will load our credits screen
     }
 
     public void MenusButton()
