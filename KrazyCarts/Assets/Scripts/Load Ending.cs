@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoadEnding : MonoBehaviour
 {
@@ -16,12 +17,22 @@ public class LoadEnding : MonoBehaviour
     public ThirdPersonControllerM controller;
     public bool gameWon;
     public bool gameLost;
+
     public AudioSource soundClip;
+    public AudioSource announceClip;
     public AudioClip winSound;
     public AudioClip lostSound;
+    public AudioClip lostQuote1;
+    public AudioClip lostQuote2;
+    public AudioClip lostQuote3;
+    public AudioClip winQuote1;
+    public AudioClip winQuote2;
+    private int randomNum;
+
     public CartPickUp cartHold;
     public TotalCarts totalCarts;
     private int check = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +42,17 @@ public class LoadEnding : MonoBehaviour
         gameLost = false;
         nextButton.SetActive(false);
         settingsButton.SetActive(false);
+        randomNum = Random.Range(1, 4);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Paycheck.money <= -500)
+        {
+            SceneManager.LoadSceneAsync(11);
+        }
+
         if (timer.timeRemaining == 0 || ((cartHold.cartHolder >= totalCarts.cartSum) && (Paycheck.money <= 0)))
         {
             gameLost = true;
@@ -74,6 +91,26 @@ public class LoadEnding : MonoBehaviour
         if (check == 0)
         {
             soundClip.PlayOneShot(winSound);
+            if (randomNum == 1)
+            {
+                announceClip.PlayOneShot(winQuote1);
+            }
+            else if (randomNum == 2)
+            {
+                announceClip.PlayOneShot(winQuote2);
+            }
+            else
+            {
+                randomNum = Random.Range(1, 3);
+                if (randomNum == 1)
+                {
+                    announceClip.PlayOneShot(winQuote1);
+                }
+                else if (randomNum == 2)
+                {
+                    announceClip.PlayOneShot(winQuote2);
+                }
+            }
             check += 1;
         }
     }
@@ -82,6 +119,19 @@ public class LoadEnding : MonoBehaviour
         if (check == 0)
         {
             soundClip.PlayOneShot(lostSound);
+
+            if (randomNum == 1)
+            {
+                announceClip.PlayOneShot(lostQuote1);
+            }
+            else if (randomNum == 2)
+            {
+                announceClip.PlayOneShot(lostQuote2);
+            }
+            else if (randomNum == 3)
+            {
+                announceClip.PlayOneShot(lostQuote3);
+            }
             check += 1;
         }
     }

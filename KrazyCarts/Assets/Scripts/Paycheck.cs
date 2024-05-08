@@ -44,7 +44,8 @@ public class Paycheck : MonoBehaviour
         {
             money = 120;
         }
-        else if (isRestarted)
+
+        else if (isRestarted || SceneManager.GetActiveScene().buildIndex == 11)
         {
             money = originalCheck;
             isRestarted = false;

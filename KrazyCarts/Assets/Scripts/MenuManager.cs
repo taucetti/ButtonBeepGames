@@ -18,7 +18,6 @@ public class MenuManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit(); // script will quit our game with on click button
-        Application.OpenURL("https://forms.gle/63XfdquGYCrWJwwD9");
     }
 
     public void SettingsButton()

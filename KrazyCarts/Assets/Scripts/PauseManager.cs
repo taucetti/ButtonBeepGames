@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;// Ignore error, it still works.
+using TMPro;
 public class PauseManager : MonoBehaviour
 {
     public bool isPaused = false;
     public GameObject backGround;// This is for the Pause Menu Background
-    public TextMeshProUGUI text;// Ignore error, it still works.
+    public TextMeshProUGUI text;
     public GameObject menuButton;
     public GameObject restartButton;
     public GameObject settingsButton;
