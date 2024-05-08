@@ -43,6 +43,7 @@ public class LoadEnding : MonoBehaviour
             controller.canMove = false;
             losePanel.SetActive(true);
             text.text = ("Level Failed...");
+            text.color = Color.red;
             restartButton.SetActive(true);
             menuButton.SetActive(true);
             settingsButton.SetActive(true);
