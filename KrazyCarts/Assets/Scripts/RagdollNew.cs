@@ -10,12 +10,15 @@ public class RagdollNew : MonoBehaviour
     public Rigidbody[] _ragdollRigidbodies;
     public CharacterController characterController;
     public Animator animator;
-    public float timeToRevive;
+    private float timeToRevive;
+    private StayAtOrigin stayAtOrigin;
     
     void Awake()
     {
         //Get the list of ragdoll joints
         _ragdollRigidbodies = GetComponentsInChildren<Rigidbody>();
+        //Get a reference to the script that locks the player model at the origin point
+        stayAtOrigin = GetComponent<StayAtOrigin>();
         //Disable the ragdoll
         DisableRagdoll();
     }
@@ -44,6 +47,12 @@ public class RagdollNew : MonoBehaviour
         //Disable the character controller so the player can move again
         characterController.enabled = true;
 
+        //Lock the player model to the origin
+        if (stayAtOrigin != null)
+        {
+            stayAtOrigin.enabled = true;
+        }
+
         //Enable the animator
         animator.enabled = true;
 
@@ -58,6 +67,12 @@ public class RagdollNew : MonoBehaviour
     {
         //Disable the character controller so the player can't move while "dead"
         characterController.enabled = false;
+
+        //Allow the player model to move from the origin
+        if (stayAtOrigin != null)
+        {
+            stayAtOrigin.enabled = false;
+        }
 
         //Disable the animator to avoid issues with the ragdoll
         animator.enabled = false;

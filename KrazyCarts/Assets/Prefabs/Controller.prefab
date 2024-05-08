@@ -157,7 +157,7 @@ Transform:
   m_GameObject: {fileID: 7117093251902860243}
   serializedVersion: 2
   m_LocalRotation: {x: 0.14321816, y: 0.004290551, z: 0.00006828457, w: 0.98968184}
-  m_LocalPosition: {x: 0.347, y: 2.641, z: -3.034}
+  m_LocalPosition: {x: 0, y: 2.641, z: -3.034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 13725629377966133}
   - component: {fileID: 6858557481224199096}
   - component: {fileID: 7625736164257963242}
+  - component: {fileID: 983439699347951432}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Player
@@ -424,6 +425,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b0303defb478d4492d8312c8cda583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &983439699347951432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816271071513359482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57d837876f9791448d8b738baabbde8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera1: {fileID: 7117093251902860243}
+  Camera2: {fileID: 1790943714299691190}
 --- !u!1001 &5133320634871913544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +447,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4902092146092377631}
     m_Modifications:
+    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e57e8371e45db134ea43d55df13fb139, type: 2}
+    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90e7359138b1a8e449a1ad4a94488da6, type: 2}
+    - target: {fileID: 4463678032035990500, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067185153323208034, guid: 8cd847623aab8e34ba0210b98777a656,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b3dab4ef2a9337940923b0c558bbe9ea,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -543,31 +583,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e57e8371e45db134ea43d55df13fb139, type: 2}
-    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e57e8371e45db134ea43d55df13fb139, type: 2}
-    - target: {fileID: -405606302946150210, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 90e7359138b1a8e449a1ad4a94488da6, type: 2}
-    - target: {fileID: 4463678032035990500, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067185153323208034, guid: 8cd847623aab8e34ba0210b98777a656,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.84
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1520,7 +1535,6 @@ MonoBehaviour:
   _ragdollRigidbodies: []
   characterController: {fileID: 831999094744103723}
   animator: {fileID: 1979174877520550374}
-  timeToRevive: 0
 --- !u!114 &2151055235545560682
 MonoBehaviour:
   m_ObjectHideFlags: 0
