@@ -11,19 +11,19 @@ public class TerminateText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (LastActiveScene.buildID == 3)// Level One
+        if (LastActiveScene.buildID == 4)// Level One
         {
             number.text = "One";
             building.text = "BIL";
             ownerName.text = "Bil";
         }
-        else if (LastActiveScene.buildID == 4)// Level Two
+        else if (LastActiveScene.buildID == 5)// Level Two
         {
             number.text = "Two";
             building.text = "De Juicy Junction";
             ownerName.text = "Juicy";
         }
-        else if (LastActiveScene.buildID == 8)// Level Three
+        else if (LastActiveScene.buildID == 9)// Level Three
         {
             number.text = "Three";
             building.text = "Niko's Nachos";

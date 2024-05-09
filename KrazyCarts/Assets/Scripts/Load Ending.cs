@@ -50,7 +50,7 @@ public class LoadEnding : MonoBehaviour
     {
         if (Paycheck.money <= -500 && check == 0)
         {
-            SceneManager.LoadSceneAsync(11);
+            SceneManager.LoadSceneAsync(12);
             check += 1;
         }
 

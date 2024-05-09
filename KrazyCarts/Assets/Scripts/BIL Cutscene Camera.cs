@@ -24,6 +24,6 @@ public class BILCutsceneCamera : MonoBehaviour
 
     public void TransitionToNextScene()
     {
-        SceneManager.LoadScene(3);//the scene that you want to load after the video has ended.
+        SceneManager.LoadScene(4);//the scene that you want to load after the video has ended.
     }
 }

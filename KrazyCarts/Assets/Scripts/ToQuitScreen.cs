@@ -33,6 +33,6 @@ public class ToQuitScreen : MonoBehaviour
 
     public void QuittingJob()
     {
-        SceneManager.LoadSceneAsync(6);
+        SceneManager.LoadSceneAsync(7);
     }
 }
