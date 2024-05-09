@@ -195,7 +195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0014038086, y: 0.50213623}
+  m_AnchoredPosition: {x: 0.0014648438, y: 0.50213623}
   m_SizeDelta: {x: -1108, y: -624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &917642877
@@ -238,7 +238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7968028, y: 0}
   m_AnchorMax: {x: 1, y: 0.095000006}
-  m_AnchoredPosition: {x: -74.009766, y: 15.369449}
+  m_AnchoredPosition: {x: -74.009766, y: 15.369385}
   m_SizeDelta: {x: -244.14246, y: -76.24115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917642879
@@ -983,7 +983,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 917642878}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1894685543010884091, guid: 7304abda81808f147b954c651729bc34,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1990777989}
   m_SourcePrefab: {fileID: 100100000, guid: 7304abda81808f147b954c651729bc34, type: 3}
 --- !u!224 &1990777987 stripped
 RectTransform:
@@ -991,6 +995,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1990777986}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1990777988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1894685543010884091, guid: 7304abda81808f147b954c651729bc34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1990777986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1990777989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990777988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa679ab6e43b98439377fa4d3929a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2071192567
 GameObject:
   m_ObjectHideFlags: 0
