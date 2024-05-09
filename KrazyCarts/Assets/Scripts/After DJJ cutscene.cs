@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class AfterDJJcutscene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    VideoPlayer video;
+    //public AudioSource cutsceneAudio;
+
+    void Awake()
     {
-        
+        video = GetComponent<VideoPlayer>();
+        video.Play();
+        video.loopPointReached += CheckOver;
+        GameObject camera = GameObject.Find("Main Camera");
     }
 
-    // Update is called once per frame
-    void Update()
+    void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        
+        TransitionToNextScene();
+    }
+
+    public void TransitionToNextScene()
+    {
+        //cutsceneAudio.Pause();
+        SceneManager.LoadScene(8);//the scene that you want to load after the video has ended.
     }
 }
