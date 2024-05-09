@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MP3 Screen.unity
     guid: b4f009b1e367a3442a407d0e0b5556cb
+  - enabled: 1
+    path: Assets/Scenes/After BIL Cutscene.unity
+    guid: 1aa462365f9f03544b233ed69776e7f3
   m_configObjects: {}
