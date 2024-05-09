@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slim with animations
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 7ef51ee9dd42a7c4ca6d071bff1ce3df,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1dc4b17d37ce8fb4984538c59224f26e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
