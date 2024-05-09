@@ -16,7 +16,7 @@ public class CartPickUp : MonoBehaviour
     public ThirdPersonControllerM ws;
 
     BoxCollider m_Collider;
-    float m_ScaleX, m_ScaleY, m_ScaleZ;
+    public float m_ScaleX, m_ScaleY, m_ScaleZ;
 
     // Start is called before the first frame update
     void Awake()

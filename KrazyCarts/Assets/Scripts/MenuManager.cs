@@ -56,6 +56,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadSceneAsync(5);
     }
 
+    public void MP3_Button()
+    {
+        SceneManager.LoadSceneAsync(12);
+    }
+
     public void BackToPause()
     {
         settingsMenu.SetActive(false);

@@ -7,8 +7,17 @@ public class CartGoal : MonoBehaviour
 {
     public CartPickUp carts;
 
+  //  public GameObject CartsPickup;
+
+    void Start()
+    {
+        
+    }
+    
+
     public void OnTriggerEnter(Collider other)
     {
+        
         if (other.CompareTag("Player")){
             if (carts.cartCount > 0)
             {
@@ -26,6 +35,8 @@ public class CartGoal : MonoBehaviour
                 // Set the movement back to default when the carts are returned
                 carts.ws.walkingSpeed = 7.5f;
                 carts.ws.runningSpeed = 11.5f;
+               
+                carts.m_ScaleZ = 1;
 
                 carts.cartCount = 0;
                 carts.soundClip.PlayOneShot(carts.soundEffect);

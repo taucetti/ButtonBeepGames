@@ -17,6 +17,7 @@ public class CartLine : MonoBehaviour
     public bool isCap;
     public GameObject message;
     public ThirdPersonControllerM ws;
+    
 
     
 
@@ -33,6 +34,7 @@ public class CartLine : MonoBehaviour
         isCap = false;
         message.SetActive(false);
         ws = GetComponent<ThirdPersonControllerM>();
+        
         
 
     }
@@ -80,6 +82,7 @@ public class CartLine : MonoBehaviour
                     // Set the movement back to default when the carts are returned
                     ws.walkingSpeed = 7.5f;
                     ws.runningSpeed = 11.5f;
+                    
 
               
                 }

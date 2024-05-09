@@ -81,6 +81,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 20afd46e63cd7924a9f25a858abbdf2a,
         type: 3}
+      propertyPath: m_TagString
+      value: Cars
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20afd46e63cd7924a9f25a858abbdf2a,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}

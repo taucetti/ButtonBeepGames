@@ -25,7 +25,7 @@ public class ToQuitScreen : MonoBehaviour
 
     private void Update()
     {
-        if (triggerActive && Input.GetKeyDown(KeyCode.E))
+        if (triggerActive && Input.GetKeyDown(KeyCode.L))
         {
             QuittingJob();
         }
