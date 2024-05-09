@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
         type: 3}
       propertyPath: m_Name
-      value: CI_NPC_Rigged_ChoppedHairNPC (1)
+      value: Chopped Hair NPC
       objectReference: {fileID: 0}
     - target: {fileID: 1731500116699747547, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
         type: 3}
@@ -167,6 +167,26 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5841273039198878570}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7204697667263028}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5358012887473139806}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4152541173609203575}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8248312204103644018}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 961f00d5ffdaa8242ac26c0dd6acae50,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6911914549593475125}
   m_SourcePrefab: {fileID: 100100000, guid: 961f00d5ffdaa8242ac26c0dd6acae50, type: 3}
 --- !u!1 &3370174180737397290 stripped
 GameObject:
@@ -195,3 +215,175 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.40381622, y: 1.5574951, z: 0.51605225}
   m_Center: {x: 0.0250206, y: 0.78260803, z: -0.010360718}
+--- !u!114 &-7204697667263028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370174180737397290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a074d529cf945029ef7cf40540c9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_LoopMode: 3
+  m_Method: 1
+  m_Duration: 20.814947
+  m_MaxSpeed: 3
+  m_EasingMode: 0
+  m_AlignmentMode: 1
+  m_ObjectForwardAxis: 2
+  m_ObjectUpAxis: 1
+  m_StartOffset: 0
+--- !u!114 &5358012887473139806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370174180737397290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3575a09633b63e4ca90d5849e7793ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &4152541173609203575
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370174180737397290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Height: 1.89
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!82 &-8248312204103644018
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370174180737397290}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3a32cab749dcdf24a8341d8a2e81ba53,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1.2
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-6911914549593475125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370174180737397290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3332a590eee8b4491443f4aa7e4949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greetSound: {fileID: 8300000, guid: 6b0afc4e5bd2c8f4a8eec92bf96ab55a, type: 3}
+  hurtSound: {fileID: 8300000, guid: 63667206366e29e438549a74a634bca1, type: 3}
+  checker: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  results: {fileID: 0}
