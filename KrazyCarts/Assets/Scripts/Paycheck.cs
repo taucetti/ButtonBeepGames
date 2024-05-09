@@ -40,12 +40,12 @@ public class Paycheck : MonoBehaviour
     }
     void Start()
     { 
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             money = 120;
         }
 
-        else if (isRestarted || SceneManager.GetActiveScene().buildIndex == 11)
+        else if (isRestarted || SceneManager.GetActiveScene().buildIndex == 12)
         {
             money = originalCheck;
             isRestarted = false;
