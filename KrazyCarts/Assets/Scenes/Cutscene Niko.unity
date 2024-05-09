@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 1742135082}
   - component: {fileID: 1742135081}
   - component: {fileID: 1742135080}
-  - component: {fileID: 1742135079}
+  - component: {fileID: 1742135086}
   m_Layer: 5
   m_Name: Skip button
   m_TagString: Untagged
@@ -765,19 +765,6 @@ RectTransform:
   m_AnchoredPosition: {x: -31.300049, y: 6.5}
   m_SizeDelta: {x: -19, y: -17}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1742135079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742135077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d6f8c9c3238ea47a422a92a037af8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutsceneAudio: {fileID: 0}
 --- !u!114 &1742135080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,10 +846,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1742135079}
-        m_TargetAssemblyTypeName: DJJCutscene, Assembly-CSharp
+      - m_Target: {fileID: 1742135086}
+        m_TargetAssemblyTypeName: NikoCutscene, Assembly-CSharp
         m_MethodName: TransitionToNextScene
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -909,6 +896,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742135077}
   m_CullTransparentMesh: 1
+--- !u!114 &1742135086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742135077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbd73bd36ea0ee47b1cfea82a658923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutsceneAudio: {fileID: 759802106}
 --- !u!1 &1948666489
 GameObject:
   m_ObjectHideFlags: 0
