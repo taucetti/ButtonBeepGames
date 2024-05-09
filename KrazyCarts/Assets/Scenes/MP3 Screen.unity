@@ -336,6 +336,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1951395458}
     m_Modifications:
+    - target: {fileID: 1875932140765928726, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909686917789450423, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3242311945178233346, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
         type: 3}
       propertyPath: m_RaycastTarget
@@ -370,6 +380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MP3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449617398430902039, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4810567438849134232, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
         type: 3}
@@ -445,6 +460,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161452231364958380, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225367918691312278, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8701059396192432252, guid: ad3a3bf254f67e6418d71ec98ee1fe43,
         type: 3}
@@ -826,7 +851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.3930483, y: -83.2289}
+  m_AnchoredPosition: {x: 0, y: -83.2289}
   m_SizeDelta: {x: 224.4629, y: 224.4629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477759663
