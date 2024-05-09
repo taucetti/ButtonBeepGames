@@ -48,9 +48,10 @@ public class LoadEnding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Paycheck.money <= -500)
+        if (Paycheck.money <= -500 && check == 0)
         {
             SceneManager.LoadSceneAsync(11);
+            check += 1;
         }
 
         if (timer.timeRemaining == 0 || ((cartHold.cartHolder >= totalCarts.cartSum) && (Paycheck.money <= 0)))
