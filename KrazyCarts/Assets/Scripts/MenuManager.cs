@@ -12,7 +12,7 @@ public class MenuManager : MonoBehaviour
     public void PlayGame()
     {
         //Redirect to the cutscene before loading the first level
-        SceneManager.LoadSceneAsync(7); // script will load our main scene for our game
+        SceneManager.LoadSceneAsync(8); // script will load our main scene for our game
     }
 
     public void QuitGame()
@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour
 
     public void SettingsButton()
     {
-        SceneManager.LoadSceneAsync(1); // this will load our settings screen
+        SceneManager.LoadSceneAsync(2); // this will load our settings screen
     }
 
     public void SettingsButtonPortable()
@@ -33,32 +33,32 @@ public class MenuManager : MonoBehaviour
 
     public void CreditsButton()
     {
-        SceneManager.LoadSceneAsync(10); // this will load our credits screen
+        SceneManager.LoadSceneAsync(11); // this will load our credits screen
     }
 
     public void MenusButton()
     {
-        SceneManager.LoadSceneAsync(0); // this script will send you to the main menu can be used as a back or menus button
+        SceneManager.LoadSceneAsync(1); // this script will send you to the main menu can be used as a back or menus button
     }
 
     public void Level2Button () // this script will send you to Level 2 intro cutscene
     {
-        SceneManager.LoadSceneAsync(9);
+        SceneManager.LoadSceneAsync(10);
     }
 
     public void Level3Button ()
     {
-        SceneManager.LoadSceneAsync(15);
+        SceneManager.LoadSceneAsync(16);
     }
 
     public void LevelSelectionButton () // this script will send you to Level Selection Screen
     {
-        SceneManager.LoadSceneAsync(5);
+        SceneManager.LoadSceneAsync(6);
     }
 
     public void MP3_Button()
     {
-        SceneManager.LoadSceneAsync(12);
+        SceneManager.LoadSceneAsync(13);
     }
 
     public void BackToPause()

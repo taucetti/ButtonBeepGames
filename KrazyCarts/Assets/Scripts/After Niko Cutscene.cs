@@ -25,6 +25,6 @@ public class AfterNikoCutscene : MonoBehaviour
     public void TransitionToNextScene()
     {
         //cutsceneAudio.Pause();
-        SceneManager.LoadScene(10);//the scene that you want to load after the video has ended.
+        SceneManager.LoadScene(11);//the scene that you want to load after the video has ended.
     }
 }

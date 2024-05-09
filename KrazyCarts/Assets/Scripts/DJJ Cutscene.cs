@@ -25,7 +25,7 @@ public class DJJCutscene : MonoBehaviour
     public void TransitionToNextScene()
     {
         cutsceneAudio.Pause();
-        SceneManager.LoadScene(3);//the scene that you want to load after the video has ended.
+        SceneManager.LoadScene(5);//the scene that you want to load after the video has ended.
     }
 
 }
